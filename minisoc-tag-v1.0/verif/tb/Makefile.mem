@@ -1,0 +1,5 @@
+# Perfil de teste UVM: mem
+include Makefile.common
+UVM_TESTNAME := minisoc_memory_test
+# Para escolher outro teste sem editar o arquivo:
+# make vcs_run UVM_TESTNAME=... (sobreposicao por linha de comando)

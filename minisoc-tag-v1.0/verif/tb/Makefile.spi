@@ -1,0 +1,5 @@
+# Perfil de teste UVM: spi
+include Makefile.common
+UVM_TESTNAME := minisoc_spi_test
+# Para escolher outro teste sem editar o arquivo:
+# make vcs_run UVM_TESTNAME=... (sobreposicao por linha de comando)

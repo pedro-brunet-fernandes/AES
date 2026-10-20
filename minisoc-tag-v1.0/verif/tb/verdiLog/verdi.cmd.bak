@@ -1,0 +1,8 @@
+verdiSetActWin -win $_OneSearch
+wvCreateWindow
+wvOpenFile -win $_nWave2 \
+           {/home/pedro.brunet/proj/minisoc-tag-v1.0/verif/tb/minisoc.fsdb}
+verdiSetActWin -win $_nWave2
+verdiWindowResize -win $_Verdi_1 "619" "190" "900" "644"
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+debExit

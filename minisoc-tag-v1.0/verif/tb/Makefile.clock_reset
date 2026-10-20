@@ -1,0 +1,5 @@
+# Perfil de teste UVM: clock_reset
+include Makefile.common
+UVM_TESTNAME := minisoc_clock_reset_test
+# Para escolher outro teste sem editar o arquivo:
+# make vcs_run UVM_TESTNAME=... (sobreposicao por linha de comando)
