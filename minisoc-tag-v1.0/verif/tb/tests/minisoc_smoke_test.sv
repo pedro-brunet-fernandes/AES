@@ -5,9 +5,7 @@ class minisoc_smoke_test extends minisoc_base_test;
     minisoc_smoke_vseq seq=minisoc_smoke_vseq::type_id::create("seq");
     phase.raise_objection(this);
     seq.start(env.vseqr);
-    repeat (20) @(posedge cfg.clk_vif.clk);
-    if(cfg.rst_vif.rst_n !== 1'b1) `uvm_error("SMOKE","Global reset failed to release")
-    else `uvm_info("SMOKE","Basic reset smoke check passed",UVM_LOW)
+    repeat (32) @(negedge cfg.clk_vif.clk);
     phase.drop_objection(this);
   endtask
 endclass

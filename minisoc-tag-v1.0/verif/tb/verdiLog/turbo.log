@@ -1,5 +1,0 @@
-Command Line: /Tools/synopsys/verdi/X-2025.06-SP2/platform/LINUXAMD64/bin/Novas -nologo -ssf minisoc.fsdb
-uname(Linux srv-microeletronica3 4.18.0-553.132.1.el8_10.x86_64 #1 SMP Thu Jun 11 14:27:43 UTC 2026 x86_64)
-au time 2.175773 -1.863954 -1.919456 delta 165949440 165949440 total 1248210944 1248210944
-KdbImportParallelMixAllLib time 0.013844 0.007100 0.011023 delta 7757824 7757824 total 1279148032 1279148032
-au time 3127.466715 21.829614 11.416465 delta 277221376 277221376 total 1359482880 1359482880

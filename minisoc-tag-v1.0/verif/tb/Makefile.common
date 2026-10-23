@@ -10,14 +10,10 @@ RTL_FILES := \
 
 TB_INTERFACES := \
   agents/clock_agent/clock_if.sv \
-  agents/reset_agent/reset_if.sv \
-  agents/spi_agent/spi_if.sv \
-  agents/memory_agent/memory_if.sv
+  agents/reset_agent/reset_if.sv
 TB_PACKAGES := \
   agents/clock_agent/clock_pkg.sv \
   agents/reset_agent/reset_pkg.sv \
-  agents/spi_agent/spi_pkg.sv \
-  agents/memory_agent/memory_pkg.sv \
   env/minisoc_env_pkg.sv \
   tests/minisoc_test_pkg.sv
 TB_TOP := top_assertions.sv top_tb.sv
@@ -26,16 +22,13 @@ TB_FILES := $(TB_INTERFACES) $(TB_PACKAGES) $(TB_TOP)
 TB_INCDIRS := \
   +incdir+agents/clock_agent \
   +incdir+agents/reset_agent \
-  +incdir+agents/spi_agent \
-  +incdir+agents/memory_agent \
-  +incdir+env +incdir+refmod +incdir+sequences +incdir+tests
+  +incdir+env +incdir+sequences +incdir+tests
 
 VCS_KDB := -kdb
 VCS_DEBUG := -debug_access+all
 VCS_BASE_FLAGS := -full64 -sverilog -ntb_opts uvm-1.2 \
-  $(VCS_KDB) $(VCS_DEBUG) -timescale=1ns/1ps
+  $(VCS_KDB) $(VCS_DEBUG) -timescale=1ns/1ps $(VCS_EXTRA_FLAGS)
 VCS_FLAGS := $(VCS_BASE_FLAGS) -l vcs_logger.log
-VCS_COV_FLAGS := -cm line+tgl+fsm+branch+cond+assert
 
 SEED ?= 1
 UVM_TESTNAME ?= minisoc_smoke_test

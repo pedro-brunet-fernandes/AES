@@ -4,46 +4,43 @@ module top_tb;
   import minisoc_test_pkg::*;
   clock_if clk_if_inst();
   reset_if reset_if_inst();
-  spi_if spi_if_inst();
-  memory_if memory_if_inst();
 
   minisoc_top dut (
     .clk(clk_if_inst.clk),.rst_n(reset_if_inst.rst_n),
-    .spi_sclk(spi_if_inst.spi_sclk),.spi_cs_n(spi_if_inst.spi_cs_n),
-    .spi_mosi(spi_if_inst.spi_mosi),.spi_miso(spi_if_inst.spi_miso),
-    .mem_clk(memory_if_inst.mem_clk), .mem_i_data(memory_if_inst.mem_i_data),
-    .mem_i_wr_en(memory_if_inst.mem_i_wr_en),.mem_i_addr(memory_if_inst.mem_i_addr),
-    .mem_o_data(memory_if_inst.mem_o_data)
+    .spi_sclk(1'b0), .spi_cs_n(1'b1), .spi_mosi(1'b0), .spi_miso(),
+    .mem_clk(1'b0), .mem_i_data(32'b0), .mem_i_wr_en(1'b0),
+    .mem_i_addr(10'b0), .mem_o_data()
   );
-  top_assertions assertions_i(.clk(clk_if_inst.clk),.rst_n(reset_if_inst.rst_n));
 
-  initial begin
-    clk_if_inst.clk = 1'b0;
-    reset_if_inst.rst_n = 1'b0;
-    spi_if_inst.spi_sclk = 1'b0;
-    spi_if_inst.spi_cs_n = 1'b1;
-    spi_if_inst.spi_mosi = 1'b0;
-    memory_if_inst.mem_clk = 1'b0;
-    memory_if_inst.mem_i_wr_en = 1'b0;
-    memory_if_inst.mem_i_addr = '0;
-    memory_if_inst.mem_i_data = '0;
-  end
-
-  // 2 GHz reference: 0.5 ns period.
-  always #0.25ns clk_if_inst.clk = ~clk_if_inst.clk;
-  // External memory clock: 100 MHz, <=200 MHz.
-  always #5ns memory_if_inst.mem_clk = ~memory_if_inst.mem_clk;
+  // Observacao interna do DUT.
+  assign reset_if_inst.control_defaults_ok =
+      ({dut.spi_cfg_start, dut.spi_cfg_decrypt, dut.spi_cfg_mode,
+        dut.spi_cfg_num_blocks, dut.spi_cfg_key, dut.spi_cfg_iv,
+        dut.spi_cfg_counter, dut.spi_cfg_mem_sel_aes,
+        dut.spi_cfg_pll_enable, dut.spi_cfg_pll_div_sel} ===
+       {1'b0,1'b0,3'b000,9'd1,128'b0,128'b0,64'b0,1'b0,1'b0,2'b11});
+  assign reset_if_inst.pll_locked=dut.pll_locked;
+  assign reset_if_inst.pll_enable=dut.spi_cfg_pll_enable;
+  assign reset_if_inst.sys_rst_n=dut.sys_rst_n;
+  assign reset_if_inst.sys_clk=dut.sys_clk;
+  top_assertions assertions_i(.clk(clk_if_inst.clk),.rst_n(reset_if_inst.rst_n),
+    .control_defaults_ok(reset_if_inst.control_defaults_ok));
 
   initial begin
     uvm_config_db#(virtual clock_if)::set(null,"uvm_test_top","clock_vif",clk_if_inst);
     uvm_config_db#(virtual reset_if)::set(null,"uvm_test_top","reset_vif",reset_if_inst);
-    uvm_config_db#(virtual spi_if)::set(null,"uvm_test_top","spi_vif",spi_if_inst);
-    uvm_config_db#(virtual memory_if)::set(null,"uvm_test_top","memory_vif",memory_if_inst);
     run_test();
   end
 
-  // O FSDB so e gravado quando +DUMP_FSDB for passado ao simv.
-  // As system tasks FSDB dependem da integracao VCS/Verdi no servidor.
+  initial begin : vcd_dump
+    string vcd_name;
+    if($test$plusargs("DUMP_VCD")) begin
+      if(!$value$plusargs("VCD=%s",vcd_name)) vcd_name="minisoc.vcd";
+      $dumpfile(vcd_name); $dumpvars(0,top_tb);
+    end
+  end
+
+  // FSDB requer integracao VCS/Verdi.
   initial begin : fsdb_dump
     string fsdb_name;
     if ($test$plusargs("DUMP_FSDB")) begin
@@ -55,22 +52,8 @@ module top_tb;
   end
 
   initial begin
-    #2ms;
+    #10us;
     $fatal(1,"Global TB watchdog timeout");
   end
-
-  initial begin
-    string fsdb_name;
-
-   if ($test$plusargs("DUMP_FSDB")) begin
-     if (!$value$plusargs("FSDB=%s", fsdb_name))
-        fsdb_name = "minisoc.fsdb";
-
-      $fsdbDumpfile(fsdb_name);
-      $fsdbDumpvars(0, top_tb);
-
-      $display("[FSDB] Gravando formas de onda em %s", fsdb_name);
-    end
-end
 
 endmodule

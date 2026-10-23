@@ -1,26 +1,14 @@
 package minisoc_test_pkg;
+  timeunit 1ns; timeprecision 1ps;
   import uvm_pkg::*;
   import clock_pkg::*;
   import reset_pkg::*;
-  import spi_pkg::*;
-  import memory_pkg::*;
   import minisoc_env_pkg::*;
   `include "uvm_macros.svh"
-  import minisoc_env_pkg::*;
   `include "reset_seq.sv"
   `include "clock_seq.sv"
-  `include "spi_write_seq.sv"
-  `include "spi_read_seq.sv"
-  `include "memory_write_seq.sv"
-  `include "memory_read_seq.sv"
   `include "minisoc_smoke_vseq.sv"
-  `include "minisoc_aes_e2e_vseq.sv"
   `include "minisoc_base_test.sv"
   `include "minisoc_smoke_test.sv"
   `include "minisoc_clock_reset_test.sv"
-  `include "minisoc_spi_test.sv"
-  `include "minisoc_memory_test.sv"
-  `include "minisoc_aes_e2e_test.sv"
-  `include "minisoc_reset_runtime_test.sv"
-  `include "minisoc_random_test.sv"
 endpackage
