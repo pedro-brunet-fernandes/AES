@@ -1,0 +1,29 @@
+# Compilacao
+**/csrc/
+**/csrc_cov/
+**/simv
+**/simv_cov
+**/*.daidir/
+**/vc_hdrs.h
+
+# Resultados
+**/coverage/
+**/logs/
+*.log
+*.fsdb
+*.vpd
+*.vcd
+*.key
+
+# Verdi
+**/verdiLog/
+**/vdCovLog/
+**/DVEfiles/
+**/novas.conf
+**/novas.rc
+**/vdCov.conf
+**/.fsm.*
+
+# Python
+__pycache__/
+*.py[cod]
