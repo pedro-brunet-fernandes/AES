@@ -1,0 +1,8 @@
+The design 'coverage/stage1.vdb' was loaded successfully.
+The following tests are merged/loaded from "coverage/stage1.vdb",
+    coverage/stage1/minisoc_clock_reset_test_1
+    coverage/stage1/minisoc_clock_reset_test_2
+    coverage/stage1/minisoc_clock_reset_test_3
+    coverage/stage1/minisoc_smoke_test_1
+    coverage/stage1/minisoc_smoke_test_2
+    coverage/stage1/minisoc_smoke_test_3

@@ -1,0 +1,54 @@
+<session version="1.1" release="X-2025.06-SP2" timestp="2026-10-24 21:40:45 GMT">
+  <info>
+    <attr name="datetime" value="Sat Oct 24 18:44:23 2026
+"/>
+    <attr name="command" value="urg -dir coverage/parte1_validacao02.vdb -report coverage/relatorio_validacao02"/>
+    <attr name="top_instance" value="uvm_custom_install_verdi_recording,top_tb,uvm_pkg"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Line" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Cond" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Toggle" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="FSM" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Branch" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Assert" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Line" value="163/976" />
+    <metric name="Cond" value="33/211" />
+    <metric name="Toggle" value="61/7168" />
+    <metric name="FSM" value="0/37" />
+    <metric name="Branch" value="54/383" />
+    <metric name="Assert" value="11/13" />
+    <metric name="Group" value="100%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="minisoc_env_pkg::minisoc_stage1_checker::stage1_clock_cg">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="minisoc_env_pkg::minisoc_stage1_checker::stage1_reset_cg">
+      <metric name="Group" value="100%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+    <scorelist type="total" name="Design Hierarchy Assert">
+      <score name="Assert" value="11/13" />
+      <score name="Score" value="84.62" />
+    </scorelist>
+    <scorelist type="total" name="Module List Assert">
+      <score name="Assert" value="11/13" />
+      <score name="Score" value="84.62" />
+    </scorelist>
+    <scorelist type="total" name="Assertion">
+      <score name="Assert" value="11/13" />
+      <score name="Score" value="84.62" />
+    </scorelist>
+  </scope>
+  </old_coverage>
+</session>

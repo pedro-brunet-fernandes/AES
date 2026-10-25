@@ -1,0 +1,6 @@
+Command Line: /Tools/synopsys/verdi/X-2025.06-SP2/platform/LINUXAMD64/bin/Novas -nologo -ssf parte1_clock_reset.fsdb
+uname(Linux srv-microeletronica3 4.18.0-553.132.1.el8_10.x86_64 #1 SMP Thu Jun 11 14:27:43 UTC 2026 x86_64)
+au time 2.189359 -1.903196 -1.918414 delta 169435136 169435136 total 1251713024 1251713024
+KdbImportParallelMixAllLib time 0.012723 0.007232 0.009058 delta 7663616 7663616 total 1281495040 1281495040
+Disabled AskUser2 Message (Response 0): Close all windows and exit verdi?
+au time 32.160531 5.549231 0.854207 delta 308350976 308350976 total 1390628864 1390628864

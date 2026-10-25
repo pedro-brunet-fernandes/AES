@@ -1,0 +1,1978 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: minisoc_aes_dp</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | <a href="asserts.html" ><b>asserts</b></a></div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_minisoc_aes_dp'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_minisoc_aes_dp')">minisoc_aes_dp</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s0 cl rt">  2.65</td>
+<td class="s0 cl rt"><a href="mod16.html#Line" >  1.67</a></td>
+<td class="s0 cl rt"><a href="mod16.html#Cond" >  4.76</a></td>
+<td class="s0 cl rt"><a href="mod16.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod16.html#Branch" >  4.17</a></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/home/pedro.brunet/proj/minisoc-tag-v1.0/verif/tb/../../frontend/rtl/minisoc_aes/minisoc_aes_dp.sv')">/home/pedro.brunet/proj/minisoc-tag-v1.0/verif/tb/../../frontend/rtl/minisoc_aes/minisoc_aes_dp.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod16.html#inst_tag_16"  onclick="showContent('inst_tag_16')">top_tb.dut.u_aes.u_aes_dp</a></td>
+<td class="s0 cl rt">  2.65</td>
+<td class="s0 cl rt"><a href="mod16.html#Line" >  1.67</a></td>
+<td class="s0 cl rt"><a href="mod16.html#Cond" >  4.76</a></td>
+<td class="s0 cl rt"><a href="mod16.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod16.html#Branch" >  4.17</a></td>
+<td class="wht cl rt"></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_minisoc_aes_dp'>
+<hr>
+<a name="inst_tag_16"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_16" >top_tb.dut.u_aes.u_aes_dp</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s0 cl rt">  2.65</td>
+<td class="s0 cl rt"><a href="mod16.html#Line" >  1.67</a></td>
+<td class="s0 cl rt"><a href="mod16.html#Cond" >  4.76</a></td>
+<td class="s0 cl rt"><a href="mod16.html#Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod16.html#Branch" >  4.17</a></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s0 cl rt">  3.38</td>
+<td class="s0 cl rt">  4.95</td>
+<td class="s0 cl rt">  6.25</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  5.71</td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s0 cl rt">  5.25</td>
+<td class="s0 cl rt">  8.26</td>
+<td class="s1 cl rt"> 13.64</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  4.35</td>
+<td class="wht cl rt"></td>
+<td><a href="mod1.html#inst_tag_1" >u_aes</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod5.html#inst_tag_5" id="tag_urg_inst_5">ke</a></td>
+<td class="s0 cl rt">  7.45</td>
+<td class="s1 cl rt"> 19.05</td>
+<td class="s0 cl rt">  9.09</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  9.09</td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_minisoc_aes_dp'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod16.html" >minisoc_aes_dp</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s0"><td class="lf">TOTAL</td><td></td><td>180</td><td>3</td><td>1.67</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>63</td><td>1</td><td>0</td><td>0.00</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>75</td><td>1</td><td>0</td><td>0.00</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>87</td><td>1</td><td>0</td><td>0.00</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>99</td><td>1</td><td>0</td><td>0.00</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>111</td><td>1</td><td>0</td><td>0.00</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>123</td><td>1</td><td>0</td><td>0.00</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>135</td><td>1</td><td>0</td><td>0.00</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>203</td><td>16</td><td>0</td><td>0.00</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>255</td><td>16</td><td>0</td><td>0.00</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>307</td><td>16</td><td>0</td><td>0.00</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>409</td><td>16</td><td>0</td><td>0.00</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>461</td><td>16</td><td>0</td><td>0.00</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>515</td><td>16</td><td>0</td><td>0.00</td></tr>
+<tr class="s0"><td class="lf">ROUTINE</td><td>577</td><td>16</td><td>0</td><td>0.00</td></tr>
+<tr class="s1"><td class="lf">ALWAYS</td><td>638</td><td>24</td><td>3</td><td>12.50</td></tr>
+<tr class="s0"><td class="lf">ALWAYS</td><td>804</td><td>37</td><td>0</td><td>0.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+62                      
+63         <font color = "red">0/1     ==>    xtime = (valor[7]) ? (valor &lt;&lt; 1) ^ 8'h1b : valor &lt;&lt; 1;</font>
+64                      
+65                      endfunction
+66                      
+67                      
+68                      
+69                      // multiplication by 04h
+70                      
+71                      function logic [7:0] GF_04;
+72                      
+73                        input logic[7:0] in;
+74                      
+75         <font color = "red">0/1     ==>    GF_04 = xtime(xtime(in));</font>
+76                      
+77                      endfunction
+78                      
+79                      
+80                      
+81                      // multiplication by 08h
+82                      
+83                      function  logic [7:0] GF_08;
+84                      
+85                        input logic [7:0] in;     
+86                      
+87         <font color = "red">0/1     ==>    GF_08 = xtime(GF_04(in));</font>
+88                      
+89                      endfunction
+90                      
+91                      
+92                      
+93                      // multiplication by 09h
+94                      
+95                      function  logic [7:0] GF_09;
+96                      
+97                        input logic [7:0] in;   
+98                      
+99         <font color = "red">0/1     ==>    GF_09 = GF_08(in)^in;</font>
+100                     
+101                     endfunction
+102                     
+103                     
+104                     
+105                     // multiplication by 0bh
+106                     
+107                     function  logic [7:0] GF_0b;
+108                     
+109                       input logic [7:0] in;   
+110                     
+111        <font color = "red">0/1     ==>    GF_0b = GF_08(in)^xtime(in)^in;</font>
+112                     
+113                     endfunction
+114                     
+115                     
+116                     
+117                     // multiplication by 0dh
+118                     
+119                     function  logic [7:0] GF_0d;
+120                     
+121                       input logic [7:0] in;   
+122                     
+123        <font color = "red">0/1     ==>    GF_0d = GF_08(in)^GF_04(in)^in;</font>
+124                     
+125                     endfunction
+126                     
+127                     
+128                     
+129                     // multiplication by 0eh
+130                     
+131                     function  logic [7:0] GF_0e;
+132                     
+133                       input logic [7:0] in;   
+134                     
+135        <font color = "red">0/1     ==>    GF_0e = GF_08(in)^GF_04(in)^xtime(in);</font>
+136                     
+137                     endfunction
+138                     
+139                     
+140                     
+141                     /** @cipher functions
+142                     
+143                       * @brief
+144                     
+145                       * functions to use in algorithm aes
+146                     
+147                       */
+148                     
+149                     
+150                     
+151                     // Substitution Box
+152                     
+153                     localparam logic[7:0] S_box [16][16] = 
+154                     
+155                     '{
+156                     
+157                       '{8'h63,8'h7c,8'h77,8'h7b,8'hf2,8'h6b,8'h6f,8'hc5,8'h30,8'h01,8'h67,8'h2b,8'hfe,8'hd7,8'hab,8'h76},
+158                     
+159                       '{8'hca,8'h82,8'hc9,8'h7d,8'hfa,8'h59,8'h47,8'hf0,8'had,8'hd4,8'ha2,8'haf,8'h9c,8'ha4,8'h72,8'hc0},
+160                     
+161                       '{8'hb7,8'hfd,8'h93,8'h26,8'h36,8'h3f,8'hf7,8'hcc,8'h34,8'ha5,8'he5,8'hf1,8'h71,8'hd8,8'h31,8'h15},
+162                     
+163                       '{8'h04,8'hc7,8'h23,8'hc3,8'h18,8'h96,8'h05,8'h9a,8'h07,8'h12,8'h80,8'he2,8'heb,8'h27,8'hb2,8'h75},
+164                     
+165                       '{8'h09,8'h83,8'h2c,8'h1a,8'h1b,8'h6e,8'h5a,8'ha0,8'h52,8'h3b,8'hd6,8'hb3,8'h29,8'he3,8'h2f,8'h84},
+166                     
+167                       '{8'h53,8'hd1,8'h00,8'hed,8'h20,8'hfc,8'hb1,8'h5b,8'h6a,8'hcb,8'hbe,8'h39,8'h4a,8'h4c,8'h58,8'hcf},
+168                     
+169                       '{8'hd0,8'hef,8'haa,8'hfb,8'h43,8'h4d,8'h33,8'h85,8'h45,8'hf9,8'h02,8'h7f,8'h50,8'h3c,8'h9f,8'ha8},
+170                     
+171                       '{8'h51,8'ha3,8'h40,8'h8f,8'h92,8'h9d,8'h38,8'hf5,8'hbc,8'hb6,8'hda,8'h21,8'h10,8'hff,8'hf3,8'hd2},
+172                     
+173                       '{8'hcd,8'h0c,8'h13,8'hec,8'h5f,8'h97,8'h44,8'h17,8'hc4,8'ha7,8'h7e,8'h3d,8'h64,8'h5d,8'h19,8'h73},
+174                     
+175                       '{8'h60,8'h81,8'h4f,8'hdc,8'h22,8'h2a,8'h90,8'h88,8'h46,8'hee,8'hb8,8'h14,8'hde,8'h5e,8'h0b,8'hdb},
+176                     
+177                       '{8'he0,8'h32,8'h3a,8'h0a,8'h49,8'h06,8'h24,8'h5c,8'hc2,8'hd3,8'hac,8'h62,8'h91,8'h95,8'he4,8'h79},
+178                     
+179                       '{8'he7,8'hc8,8'h37,8'h6d,8'h8d,8'hd5,8'h4e,8'ha9,8'h6c,8'h56,8'hf4,8'hea,8'h65,8'h7a,8'hae,8'h08},
+180                     
+181                       '{8'hba,8'h78,8'h25,8'h2e,8'h1c,8'ha6,8'hb4,8'hc6,8'he8,8'hdd,8'h74,8'h1f,8'h4b,8'hbd,8'h8b,8'h8a},
+182                     
+183                       '{8'h70,8'h3e,8'hb5,8'h66,8'h48,8'h03,8'hf6,8'h0e,8'h61,8'h35,8'h57,8'hb9,8'h86,8'hc1,8'h1d,8'h9e},
+184                     
+185                       '{8'he1,8'hf8,8'h98,8'h11,8'h69,8'hd9,8'h8e,8'h94,8'h9b,8'h1e,8'h87,8'he9,8'hce,8'h55,8'h28,8'hdf},
+186                     
+187                       '{8'h8c,8'ha1,8'h89,8'h0d,8'hbf,8'he6,8'h42,8'h68,8'h41,8'h99,8'h2d,8'h0f,8'hb0,8'h54,8'hbb,8'h16}
+188                     
+189                     };
+190                     
+191                     
+192                     
+193                     // Substitute Bytes Transformation
+194                     
+195                     function void SubBytes;
+196                     
+197                       input  logic [7:0] funct_in_state [4][4];
+198                     
+199                       output logic [7:0] funct_out_state[4][4];
+200                     
+201                     
+202                     
+203        <font color = "red">0/1     ==>    funct_out_state[0][0] = S_box[(funct_in_state[0][0] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[0][0] &amp; 8'h0f)];</font>
+204                     
+205        <font color = "red">0/1     ==>    funct_out_state[0][1] = S_box[(funct_in_state[0][1] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[0][1] &amp; 8'h0f)];</font>
+206                     
+207        <font color = "red">0/1     ==>    funct_out_state[0][2] = S_box[(funct_in_state[0][2] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[0][2] &amp; 8'h0f)];</font>
+208                     
+209        <font color = "red">0/1     ==>    funct_out_state[0][3] = S_box[(funct_in_state[0][3] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[0][3] &amp; 8'h0f)];</font>
+210                     
+211                     
+212                     
+213        <font color = "red">0/1     ==>    funct_out_state[1][0] = S_box[(funct_in_state[1][0] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[1][0] &amp; 8'h0f)];</font>
+214                     
+215        <font color = "red">0/1     ==>    funct_out_state[1][1] = S_box[(funct_in_state[1][1] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[1][1] &amp; 8'h0f)];</font>
+216                     
+217        <font color = "red">0/1     ==>    funct_out_state[1][2] = S_box[(funct_in_state[1][2] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[1][2] &amp; 8'h0f)];</font>
+218                     
+219        <font color = "red">0/1     ==>    funct_out_state[1][3] = S_box[(funct_in_state[1][3] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[1][3] &amp; 8'h0f)];</font>
+220                     
+221                     
+222                     
+223        <font color = "red">0/1     ==>    funct_out_state[2][0] = S_box[(funct_in_state[2][0] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[2][0] &amp; 8'h0f)];</font>
+224                     
+225        <font color = "red">0/1     ==>    funct_out_state[2][1] = S_box[(funct_in_state[2][1] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[2][1] &amp; 8'h0f)];</font>
+226                     
+227        <font color = "red">0/1     ==>    funct_out_state[2][2] = S_box[(funct_in_state[2][2] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[2][2] &amp; 8'h0f)];</font>
+228                     
+229        <font color = "red">0/1     ==>    funct_out_state[2][3] = S_box[(funct_in_state[2][3] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[2][3] &amp; 8'h0f)];</font>
+230                     
+231                     
+232                     
+233        <font color = "red">0/1     ==>    funct_out_state[3][0] = S_box[(funct_in_state[3][0] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[3][0] &amp; 8'h0f)];</font>
+234                     
+235        <font color = "red">0/1     ==>    funct_out_state[3][1] = S_box[(funct_in_state[3][1] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[3][1] &amp; 8'h0f)];</font>
+236                     
+237        <font color = "red">0/1     ==>    funct_out_state[3][2] = S_box[(funct_in_state[3][2] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[3][2] &amp; 8'h0f)];</font>
+238                     
+239        <font color = "red">0/1     ==>    funct_out_state[3][3] = S_box[(funct_in_state[3][3] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[3][3] &amp; 8'h0f)];</font>
+240                     
+241                     endfunction
+242                     
+243                     
+244                     
+245                     // Shift Rows Transformation
+246                     
+247                     function void ShiftRows;
+248                     
+249                       input  logic [7:0] funct_in_state [4][4];
+250                     
+251                       output logic [7:0] funct_out_state[4][4];
+252                     
+253                     
+254                     
+255        <font color = "red">0/1     ==>    funct_out_state[0][0] = funct_in_state[0][0];</font>
+256                     
+257        <font color = "red">0/1     ==>    funct_out_state[0][1] = funct_in_state[0][1];</font>
+258                     
+259        <font color = "red">0/1     ==>    funct_out_state[0][2] = funct_in_state[0][2];</font>
+260                     
+261        <font color = "red">0/1     ==>    funct_out_state[0][3] = funct_in_state[0][3];</font>
+262                     
+263                     
+264                     
+265        <font color = "red">0/1     ==>    funct_out_state[1][0] = funct_in_state[1][1];</font>
+266                     
+267        <font color = "red">0/1     ==>    funct_out_state[1][1] = funct_in_state[1][2];</font>
+268                     
+269        <font color = "red">0/1     ==>    funct_out_state[1][2] = funct_in_state[1][3];</font>
+270                     
+271        <font color = "red">0/1     ==>    funct_out_state[1][3] = funct_in_state[1][0];</font>
+272                     
+273                     
+274                     
+275        <font color = "red">0/1     ==>    funct_out_state[2][0] = funct_in_state[2][2];</font>
+276                     
+277        <font color = "red">0/1     ==>    funct_out_state[2][1] = funct_in_state[2][3];</font>
+278                     
+279        <font color = "red">0/1     ==>    funct_out_state[2][2] = funct_in_state[2][0];</font>
+280                     
+281        <font color = "red">0/1     ==>    funct_out_state[2][3] = funct_in_state[2][1];</font>
+282                     
+283                     
+284                     
+285        <font color = "red">0/1     ==>    funct_out_state[3][0] = funct_in_state[3][3];</font>
+286                     
+287        <font color = "red">0/1     ==>    funct_out_state[3][1] = funct_in_state[3][0];</font>
+288                     
+289        <font color = "red">0/1     ==>    funct_out_state[3][2] = funct_in_state[3][1];</font>
+290                     
+291        <font color = "red">0/1     ==>    funct_out_state[3][3] = funct_in_state[3][2];</font>
+292                     
+293                     endfunction
+294                     
+295                     
+296                     
+297                     // Mix Columns Transformation
+298                     
+299                     function void MixColumns;
+300                     
+301                       input  logic [7:0] funct_in_state [4][4]; 
+302                     
+303                       output logic [7:0] funct_out_state[4][4];
+304                     
+305                     
+306                     
+307        <font color = "red">0/1     ==>    funct_out_state[0][0] = xtime(funct_in_state[0][0])^(funct_in_state[1][0]^xtime(funct_in_state[1][0]))^funct_in_state[2][0]^funct_in_state[3][0];</font>
+308                     
+309        <font color = "red">0/1     ==>    funct_out_state[0][1] = xtime(funct_in_state[0][1])^(funct_in_state[1][1]^xtime(funct_in_state[1][1]))^funct_in_state[2][1]^funct_in_state[3][1];</font>
+310                     
+311        <font color = "red">0/1     ==>    funct_out_state[0][2] = xtime(funct_in_state[0][2])^(funct_in_state[1][2]^xtime(funct_in_state[1][2]))^funct_in_state[2][2]^funct_in_state[3][2];</font>
+312                     
+313        <font color = "red">0/1     ==>    funct_out_state[0][3] = xtime(funct_in_state[0][3])^(funct_in_state[1][3]^xtime(funct_in_state[1][3]))^funct_in_state[2][3]^funct_in_state[3][3];</font>
+314                     
+315                     
+316                     
+317        <font color = "red">0/1     ==>    funct_out_state[1][0] = xtime(funct_in_state[1][0])^(funct_in_state[2][0]^xtime(funct_in_state[2][0]))^funct_in_state[3][0]^funct_in_state[0][0];</font>
+318                     
+319        <font color = "red">0/1     ==>    funct_out_state[1][1] = xtime(funct_in_state[1][1])^(funct_in_state[2][1]^xtime(funct_in_state[2][1]))^funct_in_state[3][1]^funct_in_state[0][1];</font>
+320                     
+321        <font color = "red">0/1     ==>    funct_out_state[1][2] = xtime(funct_in_state[1][2])^(funct_in_state[2][2]^xtime(funct_in_state[2][2]))^funct_in_state[3][2]^funct_in_state[0][2];</font>
+322                     
+323        <font color = "red">0/1     ==>    funct_out_state[1][3] = xtime(funct_in_state[1][3])^(funct_in_state[2][3]^xtime(funct_in_state[2][3]))^funct_in_state[3][3]^funct_in_state[0][3];</font>
+324                     
+325                     
+326                     
+327        <font color = "red">0/1     ==>    funct_out_state[2][0] = xtime(funct_in_state[2][0])^(funct_in_state[3][0]^xtime(funct_in_state[3][0]))^funct_in_state[0][0]^funct_in_state[1][0];</font>
+328                     
+329        <font color = "red">0/1     ==>    funct_out_state[2][1] = xtime(funct_in_state[2][1])^(funct_in_state[3][1]^xtime(funct_in_state[3][1]))^funct_in_state[0][1]^funct_in_state[1][1];</font>
+330                     
+331        <font color = "red">0/1     ==>    funct_out_state[2][2] = xtime(funct_in_state[2][2])^(funct_in_state[3][2]^xtime(funct_in_state[3][2]))^funct_in_state[0][2]^funct_in_state[1][2];</font>
+332                     
+333        <font color = "red">0/1     ==>    funct_out_state[2][3] = xtime(funct_in_state[2][3])^(funct_in_state[3][3]^xtime(funct_in_state[3][3]))^funct_in_state[0][3]^funct_in_state[1][3];</font>
+334                     
+335        <font color = "red">0/1     ==>    funct_out_state[3][0] = xtime(funct_in_state[3][0])^(funct_in_state[0][0]^xtime(funct_in_state[0][0]))^funct_in_state[1][0]^funct_in_state[2][0];</font>
+336                     
+337        <font color = "red">0/1     ==>    funct_out_state[3][1] = xtime(funct_in_state[3][1])^(funct_in_state[0][1]^xtime(funct_in_state[0][1]))^funct_in_state[1][1]^funct_in_state[2][1];</font>
+338                     
+339        <font color = "red">0/1     ==>    funct_out_state[3][2] = xtime(funct_in_state[3][2])^(funct_in_state[0][2]^xtime(funct_in_state[0][2]))^funct_in_state[1][2]^funct_in_state[2][2];</font>
+340                     
+341        <font color = "red">0/1     ==>    funct_out_state[3][3] = xtime(funct_in_state[3][3])^(funct_in_state[0][3]^xtime(funct_in_state[0][3]))^funct_in_state[1][3]^funct_in_state[2][3];</font>
+342                     
+343                     endfunction
+344                     
+345                     
+346                     
+347                     /** @inverse cipher functions
+348                     
+349                       * @brief
+350                     
+351                       * functions to use in algorithm aes
+352                     
+353                       */
+354                     
+355                     
+356                     
+357                     // Inverse Substitution Box
+358                     
+359                     localparam logic [7:0]Inv_S_box [16][16] =
+360                     
+361                     '{
+362                     
+363                         '{8'h52,8'h09,8'h6a,8'hd5,8'h30,8'h36,8'ha5,8'h38,8'hbf,8'h40,8'ha3,8'h9e,8'h81,8'hf3,8'hd7,8'hfb},
+364                     
+365                         '{8'h7c,8'he3,8'h39,8'h82,8'h9b,8'h2f,8'hff,8'h87,8'h34,8'h8e,8'h43,8'h44,8'hc4,8'hde,8'he9,8'hcb},
+366                     
+367                         '{8'h54,8'h7b,8'h94,8'h32,8'ha6,8'hc2,8'h23,8'h3d,8'hee,8'h4c,8'h95,8'h0b,8'h42,8'hfa,8'hc3,8'h4e},
+368                     
+369                         '{8'h08,8'h2e,8'ha1,8'h66,8'h28,8'hd9,8'h24,8'hb2,8'h76,8'h5b,8'ha2,8'h49,8'h6d,8'h8b,8'hd1,8'h25},
+370                     
+371                         '{8'h72,8'hf8,8'hf6,8'h64,8'h86,8'h68,8'h98,8'h16,8'hd4,8'ha4,8'h5c,8'hcc,8'h5d,8'h65,8'hb6,8'h92},
+372                     
+373                         '{8'h6c,8'h70,8'h48,8'h50,8'hfd,8'hed,8'hb9,8'hda,8'h5e,8'h15,8'h46,8'h57,8'ha7,8'h8d,8'h9d,8'h84},
+374                     
+375                         '{8'h90,8'hd8,8'hab,8'h00,8'h8c,8'hbc,8'hd3,8'h0a,8'hf7,8'he4,8'h58,8'h05,8'hb8,8'hb3,8'h45,8'h06},
+376                     
+377                         '{8'hd0,8'h2c,8'h1e,8'h8f,8'hca,8'h3f,8'h0f,8'h02,8'hc1,8'haf,8'hbd,8'h03,8'h01,8'h13,8'h8a,8'h6b},
+378                     
+379                         '{8'h3a,8'h91,8'h11,8'h41,8'h4f,8'h67,8'hdc,8'hea,8'h97,8'hf2,8'hcf,8'hce,8'hf0,8'hb4,8'he6,8'h73},
+380                     
+381                         '{8'h96,8'hac,8'h74,8'h22,8'he7,8'had,8'h35,8'h85,8'he2,8'hf9,8'h37,8'he8,8'h1c,8'h75,8'hdf,8'h6e},
+382                     
+383                         '{8'h47,8'hf1,8'h1a,8'h71,8'h1d,8'h29,8'hc5,8'h89,8'h6f,8'hb7,8'h62,8'h0e,8'haa,8'h18,8'hbe,8'h1b},
+384                     
+385                         '{8'hfc,8'h56,8'h3e,8'h4b,8'hc6,8'hd2,8'h79,8'h20,8'h9a,8'hdb,8'hc0,8'hfe,8'h78,8'hcd,8'h5a,8'hf4},
+386                     
+387                         '{8'h1f,8'hdd,8'ha8,8'h33,8'h88,8'h07,8'hc7,8'h31,8'hb1,8'h12,8'h10,8'h59,8'h27,8'h80,8'hec,8'h5f},
+388                     
+389                         '{8'h60,8'h51,8'h7f,8'ha9,8'h19,8'hb5,8'h4a,8'h0d,8'h2d,8'he5,8'h7a,8'h9f,8'h93,8'hc9,8'h9c,8'hef},
+390                     
+391                         '{8'ha0,8'he0,8'h3b,8'h4d,8'hae,8'h2a,8'hf5,8'hb0,8'hc8,8'heb,8'hbb,8'h3c,8'h83,8'h53,8'h99,8'h61},
+392                     
+393                         '{8'h17,8'h2b,8'h04,8'h7e,8'hba,8'h77,8'hd6,8'h26,8'he1,8'h69,8'h14,8'h63,8'h55,8'h21,8'h0c,8'h7d}
+394                     
+395                     };
+396                     
+397                     
+398                     
+399                     // Inverse Shift Rows Transformation
+400                     
+401                     function void InvShiftRows;
+402                     
+403                       input  logic[7:0] funct_in_state [4][4];
+404                     
+405                       output logic[7:0] funct_out_state[4][4];
+406                     
+407                     
+408                     
+409        <font color = "red">0/1     ==>    funct_out_state[0][0] = funct_in_state[0][0];</font>
+410                     
+411        <font color = "red">0/1     ==>    funct_out_state[0][1] = funct_in_state[0][1];</font>
+412                     
+413        <font color = "red">0/1     ==>    funct_out_state[0][2] = funct_in_state[0][2];</font>
+414                     
+415        <font color = "red">0/1     ==>    funct_out_state[0][3] = funct_in_state[0][3];</font>
+416                     
+417                     
+418                     
+419        <font color = "red">0/1     ==>    funct_out_state[1][0] = funct_in_state[1][3];</font>
+420                     
+421        <font color = "red">0/1     ==>    funct_out_state[1][1] = funct_in_state[1][0];</font>
+422                     
+423        <font color = "red">0/1     ==>    funct_out_state[1][2] = funct_in_state[1][1];</font>
+424                     
+425        <font color = "red">0/1     ==>    funct_out_state[1][3] = funct_in_state[1][2];</font>
+426                     
+427                     
+428                     
+429        <font color = "red">0/1     ==>    funct_out_state[2][0] = funct_in_state[2][2];</font>
+430                     
+431        <font color = "red">0/1     ==>    funct_out_state[2][1] = funct_in_state[2][3];</font>
+432                     
+433        <font color = "red">0/1     ==>    funct_out_state[2][2] = funct_in_state[2][0];</font>
+434                     
+435        <font color = "red">0/1     ==>    funct_out_state[2][3] = funct_in_state[2][1];</font>
+436                     
+437                     
+438                     
+439        <font color = "red">0/1     ==>    funct_out_state[3][0] = funct_in_state[3][1];</font>
+440                     
+441        <font color = "red">0/1     ==>    funct_out_state[3][1] = funct_in_state[3][2];</font>
+442                     
+443        <font color = "red">0/1     ==>    funct_out_state[3][2] = funct_in_state[3][3];</font>
+444                     
+445        <font color = "red">0/1     ==>    funct_out_state[3][3] = funct_in_state[3][0];</font>
+446                     
+447                     endfunction
+448                     
+449                     
+450                     
+451                     // Inverse Substitute Bytes Transformation
+452                     
+453                     function void InvSubBytes;
+454                     
+455                       input  logic [7:0] funct_in_state [4][4];
+456                     
+457                       output logic [7:0] funct_out_state[4][4];
+458                     
+459                     
+460                     
+461        <font color = "red">0/1     ==>    funct_out_state[0][0] = Inv_S_box[(funct_in_state[0][0] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[0][0] &amp; 8'h0f)];</font>
+462                     
+463        <font color = "red">0/1     ==>    funct_out_state[0][1] = Inv_S_box[(funct_in_state[0][1] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[0][1] &amp; 8'h0f)];</font>
+464                     
+465        <font color = "red">0/1     ==>    funct_out_state[0][2] = Inv_S_box[(funct_in_state[0][2] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[0][2] &amp; 8'h0f)];</font>
+466                     
+467        <font color = "red">0/1     ==>    funct_out_state[0][3] = Inv_S_box[(funct_in_state[0][3] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[0][3] &amp; 8'h0f)];</font>
+468                     
+469                     
+470                     
+471        <font color = "red">0/1     ==>    funct_out_state[1][0] = Inv_S_box[(funct_in_state[1][0] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[1][0] &amp; 8'h0f)];</font>
+472                     
+473        <font color = "red">0/1     ==>    funct_out_state[1][1] = Inv_S_box[(funct_in_state[1][1] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[1][1] &amp; 8'h0f)];</font>
+474                     
+475        <font color = "red">0/1     ==>    funct_out_state[1][2] = Inv_S_box[(funct_in_state[1][2] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[1][2] &amp; 8'h0f)];</font>
+476                     
+477        <font color = "red">0/1     ==>    funct_out_state[1][3] = Inv_S_box[(funct_in_state[1][3] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[1][3] &amp; 8'h0f)];</font>
+478                     
+479                     
+480                     
+481        <font color = "red">0/1     ==>    funct_out_state[2][0] = Inv_S_box[(funct_in_state[2][0] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[2][0] &amp; 8'h0f)];</font>
+482                     
+483        <font color = "red">0/1     ==>    funct_out_state[2][1] = Inv_S_box[(funct_in_state[2][1] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[2][1] &amp; 8'h0f)];</font>
+484                     
+485        <font color = "red">0/1     ==>    funct_out_state[2][2] = Inv_S_box[(funct_in_state[2][2] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[2][2] &amp; 8'h0f)];</font>
+486                     
+487        <font color = "red">0/1     ==>    funct_out_state[2][3] = Inv_S_box[(funct_in_state[2][3] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[2][3] &amp; 8'h0f)];</font>
+488                     
+489                     
+490                     
+491        <font color = "red">0/1     ==>    funct_out_state[3][0] = Inv_S_box[(funct_in_state[3][0] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[3][0] &amp; 8'h0f)];</font>
+492                     
+493        <font color = "red">0/1     ==>    funct_out_state[3][1] = Inv_S_box[(funct_in_state[3][1] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[3][1] &amp; 8'h0f)];</font>
+494                     
+495        <font color = "red">0/1     ==>    funct_out_state[3][2] = Inv_S_box[(funct_in_state[3][2] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[3][2] &amp; 8'h0f)];</font>
+496                     
+497        <font color = "red">0/1     ==>    funct_out_state[3][3] = Inv_S_box[(funct_in_state[3][3] &amp; 8'hf0) &gt;&gt; 4][(funct_in_state[3][3] &amp; 8'h0f)];</font>
+498                     
+499                     endfunction
+500                     
+501                     
+502                     
+503                     // Inverse Mix Columns Transformation
+504                     
+505                     function void InvMixColumns;
+506                     
+507                       input  logic [7:0] funct_in_state [4][4];
+508                     
+509                       output logic [7:0] funct_out_state[4][4];
+510                     
+511                     
+512                     
+513                       //c = 0
+514                     
+515        <font color = "red">0/1     ==>    funct_out_state[0][0] = GF_0e(funct_in_state[0][0]) ^ GF_0b(funct_in_state[1][0]) ^ GF_0d(funct_in_state[2][0]) ^ GF_09(funct_in_state[3][0]);</font>
+516                     
+517        <font color = "red">0/1     ==>    funct_out_state[1][0] = GF_09(funct_in_state[0][0]) ^ GF_0e(funct_in_state[1][0]) ^ GF_0b(funct_in_state[2][0]) ^ GF_0d(funct_in_state[3][0]);</font>
+518                     
+519        <font color = "red">0/1     ==>    funct_out_state[2][0] = GF_0d(funct_in_state[0][0]) ^ GF_09(funct_in_state[1][0]) ^ GF_0e(funct_in_state[2][0]) ^ GF_0b(funct_in_state[3][0]);                                                                                      </font>
+520                     
+521        <font color = "red">0/1     ==>    funct_out_state[3][0] = GF_0b(funct_in_state[0][0]) ^ GF_0d(funct_in_state[1][0]) ^ GF_09(funct_in_state[2][0]) ^ GF_0e(funct_in_state[3][0]);             </font>
+522                     
+523                     
+524                     
+525                       //c = 1
+526                     
+527        <font color = "red">0/1     ==>    funct_out_state[0][1] = GF_0e(funct_in_state[0][1]) ^ GF_0b(funct_in_state[1][1]) ^ GF_0d(funct_in_state[2][1]) ^ GF_09(funct_in_state[3][1]);</font>
+528                     
+529        <font color = "red">0/1     ==>    funct_out_state[1][1] = GF_09(funct_in_state[0][1]) ^ GF_0e(funct_in_state[1][1]) ^ GF_0b(funct_in_state[2][1]) ^ GF_0d(funct_in_state[3][1]);</font>
+530                     
+531        <font color = "red">0/1     ==>    funct_out_state[2][1] = GF_0d(funct_in_state[0][1]) ^ GF_09(funct_in_state[1][1]) ^ GF_0e(funct_in_state[2][1]) ^ GF_0b(funct_in_state[3][1]);                                                                                      </font>
+532                     
+533        <font color = "red">0/1     ==>    funct_out_state[3][1] = GF_0b(funct_in_state[0][1]) ^ GF_0d(funct_in_state[1][1]) ^ GF_09(funct_in_state[2][1]) ^ GF_0e(funct_in_state[3][1]); </font>
+534                     
+535                     
+536                     
+537                       //c = 2 
+538                     
+539        <font color = "red">0/1     ==>    funct_out_state[0][2] = GF_0e(funct_in_state[0][2]) ^ GF_0b(funct_in_state[1][2]) ^ GF_0d(funct_in_state[2][2]) ^ GF_09(funct_in_state[3][2]);</font>
+540                     
+541        <font color = "red">0/1     ==>    funct_out_state[1][2] = GF_09(funct_in_state[0][2]) ^ GF_0e(funct_in_state[1][2]) ^ GF_0b(funct_in_state[2][2]) ^ GF_0d(funct_in_state[3][2]);</font>
+542                     
+543        <font color = "red">0/1     ==>    funct_out_state[2][2] = GF_0d(funct_in_state[0][2]) ^ GF_09(funct_in_state[1][2]) ^ GF_0e(funct_in_state[2][2]) ^ GF_0b(funct_in_state[3][2]);                                                                                      </font>
+544                     
+545        <font color = "red">0/1     ==>    funct_out_state[3][2] = GF_0b(funct_in_state[0][2]) ^ GF_0d(funct_in_state[1][2]) ^ GF_09(funct_in_state[2][2]) ^ GF_0e(funct_in_state[3][2]); </font>
+546                     
+547                     
+548                     
+549                       //c = 3
+550                     
+551        <font color = "red">0/1     ==>    funct_out_state[0][3] = GF_0e(funct_in_state[0][3]) ^ GF_0b(funct_in_state[1][3]) ^ GF_0d(funct_in_state[2][3]) ^ GF_09(funct_in_state[3][3]);</font>
+552                     
+553        <font color = "red">0/1     ==>    funct_out_state[1][3] = GF_09(funct_in_state[0][3]) ^ GF_0e(funct_in_state[1][3]) ^ GF_0b(funct_in_state[2][3]) ^ GF_0d(funct_in_state[3][3]);</font>
+554                     
+555        <font color = "red">0/1     ==>    funct_out_state[2][3] = GF_0d(funct_in_state[0][3]) ^ GF_09(funct_in_state[1][3]) ^ GF_0e(funct_in_state[2][3]) ^ GF_0b(funct_in_state[3][3]);                                                                                     </font>
+556                     
+557        <font color = "red">0/1     ==>    funct_out_state[3][3] = GF_0b(funct_in_state[0][3]) ^ GF_0d(funct_in_state[1][3]) ^ GF_09(funct_in_state[2][3]) ^ GF_0e(funct_in_state[3][3]);</font>
+558                     
+559                     endfunction
+560                     
+561                     
+562                     
+563                     /** @functions used by cipher and inverse cipher
+564                     
+565                       * @brief
+566                     
+567                       * 
+568                     
+569                       */
+570                     
+571                     
+572                     
+573                     // Add Round Key Transformation
+574                     
+575                     function void AddRoundKey(input logic [7:0] funct_in_state [4][4], input logic [7:0] w[4][4], output logic [7:0] funct_out_state [4][4]);
+576                     
+577        <font color = "red">0/1     ==>    funct_out_state[0][0] = funct_in_state[0][0]^w[0][0];</font>
+578                     
+579        <font color = "red">0/1     ==>    funct_out_state[0][1] = funct_in_state[0][1]^w[0][1];</font>
+580                     
+581        <font color = "red">0/1     ==>    funct_out_state[0][2] = funct_in_state[0][2]^w[0][2];</font>
+582                     
+583        <font color = "red">0/1     ==>    funct_out_state[0][3] = funct_in_state[0][3]^w[0][3];</font>
+584                     
+585                     
+586                     
+587        <font color = "red">0/1     ==>    funct_out_state[1][0] = funct_in_state[1][0]^w[1][0];</font>
+588                     
+589        <font color = "red">0/1     ==>    funct_out_state[1][1] = funct_in_state[1][1]^w[1][1];</font>
+590                     
+591        <font color = "red">0/1     ==>    funct_out_state[1][2] = funct_in_state[1][2]^w[1][2];</font>
+592                     
+593        <font color = "red">0/1     ==>    funct_out_state[1][3] = funct_in_state[1][3]^w[1][3];</font>
+594                     
+595                     
+596                     
+597        <font color = "red">0/1     ==>    funct_out_state[2][0] = funct_in_state[2][0]^w[2][0];</font>
+598                     
+599        <font color = "red">0/1     ==>    funct_out_state[2][1] = funct_in_state[2][1]^w[2][1];</font>
+600                     
+601        <font color = "red">0/1     ==>    funct_out_state[2][2] = funct_in_state[2][2]^w[2][2];</font>
+602                     
+603        <font color = "red">0/1     ==>    funct_out_state[2][3] = funct_in_state[2][3]^w[2][3];</font>
+604                     
+605                     
+606                     
+607        <font color = "red">0/1     ==>    funct_out_state[3][0] = funct_in_state[3][0]^w[3][0];</font>
+608                     
+609        <font color = "red">0/1     ==>    funct_out_state[3][1] = funct_in_state[3][1]^w[3][1];</font>
+610                     
+611        <font color = "red">0/1     ==>    funct_out_state[3][2] = funct_in_state[3][2]^w[3][2];</font>
+612                     
+613        <font color = "red">0/1     ==>    funct_out_state[3][3] = funct_in_state[3][3]^w[3][3];</font>
+614                     
+615                     endfunction
+616                     
+617                     
+618                     
+619                     // Key Expansion
+620                     
+621                     minisoc_aes_key_exp ke (
+622                       .clk     (clk),
+623                       .rst_n   (rst_n),
+624                       .key     (key),
+625                       .key_exp (w),
+626                       .state   (state_key_exp),
+627                       .start   (start_AES)
+628                     );
+629                     
+630                     
+631                     
+632                     
+633                     
+634                     always_comb
+635                     
+636                     begin
+637                     
+638        1/1            expanding = (state_key_exp != 2'b10 &amp;&amp; start_AES) ? 1 : 0;
+639                     
+640                     
+641                     
+642        1/1            if(start_AES) begin
+643                     
+644                         // encrypt
+645                     
+646        <font color = "red">0/1     ==>      if(!decrypt) begin</font>
+647                     
+648        <font color = "red">0/1     ==>        if(round &lt;= 10)</font>
+649                     
+650                           begin
+651                     
+652        <font color = "red">0/1     ==>          if(round == 0)</font>
+653                     
+654                             begin
+655                     
+656        <font color = "red">0/1     ==>            AddRoundKey(in_state, '{'{w[0][0], w[0][1], w[0][2], w[0][3]},</font>
+657                     
+658                                           '{w[1][0], w[1][1], w[1][2], w[1][3]},
+659                     
+660                                           '{w[2][0], w[2][1], w[2][2], w[2][3]},
+661                     
+662                                           '{w[3][0], w[3][1], w[3][2], w[3][3]}}, out_state);
+663                     
+664                             end
+665                     
+666                             else
+667                     
+668                             begin
+669                     
+670        <font color = "red">0/1     ==>            SubBytes(in_state, aux_state[0]);</font>
+671                     
+672        <font color = "red">0/1     ==>            ShiftRows(aux_state[0], aux_state[1]);</font>
+673                     
+674                     
+675                     
+676        <font color = "red">0/1     ==>            if(round != 10)</font>
+677                     
+678                               begin
+679                     
+680        <font color = "red">0/1     ==>              MixColumns(aux_state[1], aux_state[2]);</font>
+681                     
+682                     
+683                     
+684        <font color = "red">0/1     ==>              AddRoundKey(aux_state[2], '{'{w[0][round*4], w[0][round*4 + 1], w[0][round*4 + 2], w[0][round*4 + 3]},</font>
+685                     
+686                                               '{w[1][round*4], w[1][round*4 + 1], w[1][round*4 + 2], w[1][round*4 + 3]},
+687                     
+688                                               '{w[2][round*4], w[2][round*4 + 1], w[2][round*4 + 2], w[2][round*4 + 3]},
+689                     
+690                                               '{w[3][round*4], w[3][round*4 + 1], w[3][round*4 + 2], w[3][round*4 + 3]}}, out_state);
+691                     
+692                               end
+693                     
+694                               else
+695                     
+696                               begin
+697                     
+698        <font color = "red">0/1     ==>              AddRoundKey(aux_state[1], '{'{w[0][round*4], w[0][round*4 + 1], w[0][round*4 + 2], w[0][round*4 + 3]},</font>
+699                     
+700                                               '{w[1][round*4], w[1][round*4 + 1], w[1][round*4 + 2], w[1][round*4 + 3]},
+701                     
+702                                               '{w[2][round*4], w[2][round*4 + 1], w[2][round*4 + 2], w[2][round*4 + 3]},
+703                     
+704                                               '{w[3][round*4], w[3][round*4 + 1], w[3][round*4 + 2], w[3][round*4 + 3]}}, out_state);
+705                     
+706                               end
+707                     
+708                             end
+709                     
+710                           end
+711                     
+712                           else
+713                     
+714        <font color = "red">0/1     ==>          out_state = in_state;</font>
+715                     
+716                         end
+717                     
+718                         // decrypt
+719                     
+720                         else 
+721                     
+722                         begin
+723                     
+724        <font color = "red">0/1     ==>        if(round &lt;= 10)</font>
+725                     
+726                           begin
+727                     
+728        <font color = "red">0/1     ==>          if(round == 0)</font>
+729                     
+730                             begin
+731                     
+732        <font color = "red">0/1     ==>            AddRoundKey(in_state, '{'{w[0][40], w[0][41], w[0][42], w[0][43]},</font>
+733                     
+734                                           '{w[1][40], w[1][41], w[1][42], w[1][43]},
+735                     
+736                                           '{w[2][40], w[2][41], w[2][42], w[2][43]},
+737                     
+738                                           '{w[3][40], w[3][41], w[3][42], w[3][43]}}, out_state);
+739                     
+740                             end
+741                     
+742                             else
+743                     
+744                             begin
+745                     
+746        <font color = "red">0/1     ==>            InvShiftRows(in_state, aux_state[0]);</font>
+747                     
+748        <font color = "red">0/1     ==>            InvSubBytes(aux_state[0], aux_state[1]);</font>
+749                     
+750        <font color = "red">0/1     ==>            if(round != 10)</font>
+751                     
+752                               begin
+753                     
+754        <font color = "red">0/1     ==>              AddRoundKey(aux_state[1], '{'{w[0][40 - round*4], w[0][41 - round*4], w[0][42 - round*4], w[0][43 - round*4]},</font>
+755                     
+756                                               '{w[1][40 - round*4], w[1][41 - round*4], w[1][42 - round*4], w[1][43 - round*4]},
+757                     
+758                                               '{w[2][40 - round*4], w[2][41 - round*4], w[2][42 - round*4], w[2][43 - round*4]},
+759                     
+760                                               '{w[3][40 - round*4], w[3][41 - round*4], w[3][42 - round*4], w[3][43 - round*4]}}, aux_state[2]);
+761                     
+762        <font color = "red">0/1     ==>              InvMixColumns(aux_state[2], out_state);</font>
+763                     
+764                               end
+765                     
+766                               else
+767                     
+768                               begin
+769                     
+770        <font color = "red">0/1     ==>              AddRoundKey(aux_state[1], '{'{w[0][40 - round*4], w[0][41 - round*4], w[0][42 - round*4], w[0][43 - round*4]},</font>
+771                     
+772                                               '{w[1][40 - round*4], w[1][41 - round*4], w[1][42 - round*4], w[1][43 - round*4]},
+773                     
+774                                               '{w[2][40 - round*4], w[2][41 - round*4], w[2][42 - round*4], w[2][43 - round*4]},
+775                     
+776                                               '{w[3][40 - round*4], w[3][41 - round*4], w[3][42 - round*4], w[3][43 - round*4]}}, out_state);
+777                     
+778                               end
+779                     
+780                             end
+781                     
+782                           end
+783                     
+784                           else
+785                     
+786        <font color = "red">0/1     ==>          out_state = in_state;</font>
+787                     
+788                         end
+789                     
+790                       end
+791                     
+792                       else
+793                     
+794        1/1              out_state = in_state;
+795                     
+796                     end
+797                     
+798                     
+799                     
+800                     always_ff @(posedge clk)
+801                     
+802                     begin
+803                     
+804        <font color = "red">0/1     ==>    if(!rst_n)</font>
+805                     
+806                       begin
+807                     
+808        <font color = "red">0/1     ==>      round     &lt;= 0;</font>
+809                     
+810        <font color = "red">0/1     ==>      aux     &lt;= 1;</font>
+811                     
+812        <font color = "red">0/1     ==>      valid_AES &lt;= 0;</font>
+813                     
+814        <font color = "red">0/1     ==>      busAES    &lt;= 0;</font>
+815                     
+816                       end
+817                     
+818                       else
+819                     
+820                       begin
+821                     
+822        <font color = "red">0/1     ==>      if(start_AES)</font>
+823                     
+824                         begin
+825                     
+826        <font color = "red">0/1     ==>        if(state_key_exp == 2'b10)</font>
+827                     
+828                           begin
+829                     
+830        <font color = "red">0/1     ==>          if(round &lt; 10)</font>
+831                     
+832                             begin
+833                     
+834        <font color = "red">0/1     ==>            if(round == 0)</font>
+835                     
+836                               begin
+837                     
+838        <font color = "red">0/1     ==>              aux &lt;= 0;</font>
+839                     
+840        <font color = "red">0/1     ==>              if(!aux)</font>
+841                     
+842        <font color = "red">0/1     ==>                in_state &lt;= out_state;</font>
+843                     
+844                                 else
+845                     
+846                                 begin
+847                     
+848        <font color = "red">0/1     ==>                in_state[0][0] &lt;= busB[127:120];</font>
+849                     
+850        <font color = "red">0/1     ==>                in_state[1][0] &lt;= busB[119:112];</font>
+851                     
+852        <font color = "red">0/1     ==>                in_state[2][0] &lt;= busB[111:104];</font>
+853                     
+854        <font color = "red">0/1     ==>                in_state[3][0] &lt;= busB[103: 96];</font>
+855                     
+856                     
+857                     
+858        <font color = "red">0/1     ==>                in_state[0][1] &lt;= busB[95 : 88];</font>
+859                     
+860        <font color = "red">0/1     ==>                in_state[1][1] &lt;= busB[87 : 80];</font>
+861                     
+862        <font color = "red">0/1     ==>                in_state[2][1] &lt;= busB[79 : 72];</font>
+863                     
+864        <font color = "red">0/1     ==>                in_state[3][1] &lt;= busB[71 : 64];</font>
+865                     
+866                     
+867                     
+868        <font color = "red">0/1     ==>                in_state[0][2] &lt;= busB[63 : 56];</font>
+869                     
+870        <font color = "red">0/1     ==>                in_state[1][2] &lt;= busB[55 : 48];</font>
+871                     
+872        <font color = "red">0/1     ==>                in_state[2][2] &lt;= busB[47 : 40];</font>
+873                     
+874        <font color = "red">0/1     ==>                in_state[3][2] &lt;= busB[39 : 32];</font>
+875                     
+876                     
+877                     
+878        <font color = "red">0/1     ==>                in_state[0][3] &lt;= busB[31 : 24];</font>
+879                     
+880        <font color = "red">0/1     ==>                in_state[1][3] &lt;= busB[23 : 16];</font>
+881                     
+882        <font color = "red">0/1     ==>                in_state[2][3] &lt;= busB[15 :  8];</font>
+883                     
+884        <font color = "red">0/1     ==>                in_state[3][3] &lt;= busB[7  :  0];</font>
+885                     
+886                                 end
+887                     
+888                               end
+889                     
+890                               else
+891                     
+892        <font color = "red">0/1     ==>              in_state &lt;= out_state;</font>
+893                     
+894        <font color = "red">0/1     ==>            if(!aux)</font>
+895                     
+896        <font color = "red">0/1     ==>              round &lt;= round + 1;</font>
+                   <font color = "red">==>  MISSING_ELSE</font>
+897                     
+898                             end
+899                     
+900                             else
+901                     
+902        <font color = "red">0/1     ==>            valid_AES &lt;= 1;</font>
+903                     
+904                     
+905                     
+906        <font color = "red">0/1     ==>          busAES &lt;= {out_state[0][0],out_state[1][0],out_state[2][0],out_state[3][0],</font>
+907                     
+908                                    out_state[0][1],out_state[1][1],out_state[2][1],out_state[3][1],
+909                     
+910                                    out_state[0][2],out_state[1][2],out_state[2][2],out_state[3][2],
+911                     
+912                                    out_state[0][3],out_state[1][3],out_state[2][3],out_state[3][3]};
+913                     
+914                           end
+                   <font color = "red">==>  MISSING_ELSE</font>
+915                     
+916        <font color = "red">0/1     ==>        if(valid_AES)</font>
+917                     
+918                           begin
+919                     
+920        <font color = "red">0/1     ==>          valid_AES &lt;= 0;</font>
+921                     
+922        <font color = "red">0/1     ==>          round     &lt;= 0;</font>
+923                     
+924        <font color = "red">0/1     ==>          aux     &lt;= 1;</font>
+925                     
+926                           end
+                   <font color = "red">==>  MISSING_ELSE</font>
+927                     
+928                         end
+                   <font color = "red">==>  MISSING_ELSE</font>
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod16.html" >minisoc_aes_dp</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s0"><td class="lf">Conditions</td><td>21</td><td>1</td><td>4.76</td></tr>
+<tr class="s0"><td class="lf">Logical</td><td>21</td><td>1</td><td>4.76</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       63
+ EXPRESSION (valor[7] ? (((valor &lt;&lt; 1) ^ 8'h1b)) : ((valor &lt;&lt; 1)))
+             ----1---
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       638
+ EXPRESSION (((state_key_exp != 2'b10) &amp;&amp; start_AES) ? 1 : 0)
+             -------------------1-------------------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       638
+ SUB-EXPRESSION ((state_key_exp != 2'b10) &amp;&amp; start_AES)
+                 ------------1-----------    ----2----
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       638
+ SUB-EXPRESSION (state_key_exp != 2'b10)
+                ------------1-----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       652
+ EXPRESSION (round == 4'b0)
+            -------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       676
+ EXPRESSION (round != 4'ha)
+            -------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       728
+ EXPRESSION (round == 4'b0)
+            -------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       750
+ EXPRESSION (round != 4'ha)
+            -------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       826
+ EXPRESSION (state_key_exp == 2'b10)
+            ------------1-----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       834
+ EXPRESSION (round == 4'b0)
+            -------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod16.html" >minisoc_aes_dp</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s0">
+<td>Totals</td>
+<td class="rt">12</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Total Bits</td>
+<td class="rt">794</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">397</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">397</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Ports</td>
+<td class="rt">9</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Port Bits</td>
+<td class="rt">780</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">390</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">390</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Signals</td>
+<td class="rt">3</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Signal Bits</td>
+<td class="rt">14</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">7</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">7</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>rst_n</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>start_AES</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>decrypt</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>key[127:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>busB[127:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>valid_AES</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>expanding</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>busAES[127:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>round[3:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>state_key_exp[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>aux</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr></table><br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod16.html" >minisoc_aes_dp</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s0">
+<td>Branches</td>
+<td></td>
+<td class="rt">24</td>
+<td class="rt">1</td>
+<td class="rt">4.17  </td>
+</tr><tr class="s0">
+<td>TERNARY</td>
+<td class="rt">638</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s1">
+<td>IF</td>
+<td class="rt">642</td>
+<td class="rt">9</td>
+<td class="rt">1</td>
+<td class="rt">11.11 </td>
+</tr><tr class="s0">
+<td>IF</td>
+<td class="rt">804</td>
+<td class="rt">11</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>TERNARY</td>
+<td class="rt">63</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+638          expanding = (state_key_exp != 2'b10 && start_AES) ? 1 : 0;
+                                                               <font color = "red">-1-</font>  
+                                                               <font color = "red">==></font>  
+                                                               <font color = "red">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+642          if(start_AES) begin
+             <font color = "red">-1-</font>  
+643        
+644            // encrypt
+645        
+646            if(!decrypt) begin
+               <font color = "red">-2-</font>  
+647        
+648              if(round <= 10)
+                 <font color = "red">-3-</font>  
+649        
+650              begin
+651        
+652                if(round == 0)
+                   <font color = "red">-4-</font>  
+653        
+654                begin
+655        
+656                  AddRoundKey(in_state, '{'{w[0][0], w[0][1], w[0][2], w[0][3]},
+           <font color = "red">          ==></font>
+657        
+658                              '{w[1][0], w[1][1], w[1][2], w[1][3]},
+659        
+660                              '{w[2][0], w[2][1], w[2][2], w[2][3]},
+661        
+662                              '{w[3][0], w[3][1], w[3][2], w[3][3]}}, out_state);
+663        
+664                end
+665        
+666                else
+667        
+668                begin
+669        
+670                  SubBytes(in_state, aux_state[0]);
+671        
+672                  ShiftRows(aux_state[0], aux_state[1]);
+673        
+674        
+675        
+676                  if(round != 10)
+                     <font color = "red">-5-</font>  
+677        
+678                  begin
+679        
+680                    MixColumns(aux_state[1], aux_state[2]);
+           <font color = "red">            ==></font>
+681        
+682        
+683        
+684                    AddRoundKey(aux_state[2], '{'{w[0][round*4], w[0][round*4 + 1], w[0][round*4 + 2], w[0][round*4 + 3]},
+685        
+686                                  '{w[1][round*4], w[1][round*4 + 1], w[1][round*4 + 2], w[1][round*4 + 3]},
+687        
+688                                  '{w[2][round*4], w[2][round*4 + 1], w[2][round*4 + 2], w[2][round*4 + 3]},
+689        
+690                                  '{w[3][round*4], w[3][round*4 + 1], w[3][round*4 + 2], w[3][round*4 + 3]}}, out_state);
+691        
+692                  end
+693        
+694                  else
+695        
+696                  begin
+697        
+698                    AddRoundKey(aux_state[1], '{'{w[0][round*4], w[0][round*4 + 1], w[0][round*4 + 2], w[0][round*4 + 3]},
+           <font color = "red">            ==></font>
+699        
+700                                  '{w[1][round*4], w[1][round*4 + 1], w[1][round*4 + 2], w[1][round*4 + 3]},
+701        
+702                                  '{w[2][round*4], w[2][round*4 + 1], w[2][round*4 + 2], w[2][round*4 + 3]},
+703        
+704                                  '{w[3][round*4], w[3][round*4 + 1], w[3][round*4 + 2], w[3][round*4 + 3]}}, out_state);
+705        
+706                  end
+707        
+708                end
+709        
+710              end
+711        
+712              else
+713        
+714                out_state = in_state;
+           <font color = "red">        ==></font>
+715        
+716            end
+717        
+718            // decrypt
+719        
+720            else 
+721        
+722            begin
+723        
+724              if(round <= 10)
+                 <font color = "red">-6-</font>  
+725        
+726              begin
+727        
+728                if(round == 0)
+                   <font color = "red">-7-</font>  
+729        
+730                begin
+731        
+732                  AddRoundKey(in_state, '{'{w[0][40], w[0][41], w[0][42], w[0][43]},
+           <font color = "red">          ==></font>
+733        
+734                              '{w[1][40], w[1][41], w[1][42], w[1][43]},
+735        
+736                              '{w[2][40], w[2][41], w[2][42], w[2][43]},
+737        
+738                              '{w[3][40], w[3][41], w[3][42], w[3][43]}}, out_state);
+739        
+740                end
+741        
+742                else
+743        
+744                begin
+745        
+746                  InvShiftRows(in_state, aux_state[0]);
+747        
+748                  InvSubBytes(aux_state[0], aux_state[1]);
+749        
+750                  if(round != 10)
+                     <font color = "red">-8-</font>  
+751        
+752                  begin
+753        
+754                    AddRoundKey(aux_state[1], '{'{w[0][40 - round*4], w[0][41 - round*4], w[0][42 - round*4], w[0][43 - round*4]},
+           <font color = "red">            ==></font>
+755        
+756                                  '{w[1][40 - round*4], w[1][41 - round*4], w[1][42 - round*4], w[1][43 - round*4]},
+757        
+758                                  '{w[2][40 - round*4], w[2][41 - round*4], w[2][42 - round*4], w[2][43 - round*4]},
+759        
+760                                  '{w[3][40 - round*4], w[3][41 - round*4], w[3][42 - round*4], w[3][43 - round*4]}}, aux_state[2]);
+761        
+762                    InvMixColumns(aux_state[2], out_state);
+763        
+764                  end
+765        
+766                  else
+767        
+768                  begin
+769        
+770                    AddRoundKey(aux_state[1], '{'{w[0][40 - round*4], w[0][41 - round*4], w[0][42 - round*4], w[0][43 - round*4]},
+           <font color = "red">            ==></font>
+771        
+772                                  '{w[1][40 - round*4], w[1][41 - round*4], w[1][42 - round*4], w[1][43 - round*4]},
+773        
+774                                  '{w[2][40 - round*4], w[2][41 - round*4], w[2][42 - round*4], w[2][43 - round*4]},
+775        
+776                                  '{w[3][40 - round*4], w[3][41 - round*4], w[3][42 - round*4], w[3][43 - round*4]}}, out_state);
+777        
+778                  end
+779        
+780                end
+781        
+782              end
+783        
+784              else
+785        
+786                out_state = in_state;
+           <font color = "red">        ==></font>
+787        
+788            end
+789        
+790          end
+791        
+792          else
+793        
+794            out_state = in_state;
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>-8-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+804          if(!rst_n)
+             <font color = "red">-1-</font>  
+805        
+806          begin
+807        
+808            round     <= 0;
+           <font color = "red">    ==></font>
+809        
+810            aux     <= 1;
+811        
+812            valid_AES <= 0;
+813        
+814            busAES    <= 0;
+815        
+816          end
+817        
+818          else
+819        
+820          begin
+821        
+822            if(start_AES)
+               <font color = "red">-2-</font>  
+823        
+824            begin
+825        
+826              if(state_key_exp == 2'b10)
+                 <font color = "red">-3-</font>  
+827        
+828              begin
+829        
+830                if(round < 10)
+                   <font color = "red">-4-</font>  
+831        
+832                begin
+833        
+834                  if(round == 0)
+                     <font color = "red">-5-</font>  
+835        
+836                  begin
+837        
+838                    aux <= 0;
+839        
+840                    if(!aux)
+                       <font color = "red">-6-</font>  
+841        
+842                      in_state <= out_state;
+           <font color = "red">              ==></font>
+843        
+844                    else
+845        
+846                    begin
+847        
+848                      in_state[0][0] <= busB[127:120];
+           <font color = "red">              ==></font>
+849        
+850                      in_state[1][0] <= busB[119:112];
+851        
+852                      in_state[2][0] <= busB[111:104];
+853        
+854                      in_state[3][0] <= busB[103: 96];
+855        
+856        
+857        
+858                      in_state[0][1] <= busB[95 : 88];
+859        
+860                      in_state[1][1] <= busB[87 : 80];
+861        
+862                      in_state[2][1] <= busB[79 : 72];
+863        
+864                      in_state[3][1] <= busB[71 : 64];
+865        
+866        
+867        
+868                      in_state[0][2] <= busB[63 : 56];
+869        
+870                      in_state[1][2] <= busB[55 : 48];
+871        
+872                      in_state[2][2] <= busB[47 : 40];
+873        
+874                      in_state[3][2] <= busB[39 : 32];
+875        
+876        
+877        
+878                      in_state[0][3] <= busB[31 : 24];
+879        
+880                      in_state[1][3] <= busB[23 : 16];
+881        
+882                      in_state[2][3] <= busB[15 :  8];
+883        
+884                      in_state[3][3] <= busB[7  :  0];
+885        
+886                    end
+887        
+888                  end
+889        
+890                  else
+891        
+892                    in_state <= out_state;
+           <font color = "red">            ==></font>
+893        
+894                  if(!aux)
+                     <font color = "red">-7-</font>  
+895        
+896                    round <= round + 1;
+           <font color = "red">            ==></font>
+                       MISSING_ELSE
+           <font color = "red">            ==></font>
+897        
+898                end
+899        
+900                else
+901        
+902                  valid_AES <= 1;
+           <font color = "red">          ==></font>
+903        
+904        
+905        
+906                busAES <= {out_state[0][0],out_state[1][0],out_state[2][0],out_state[3][0],
+907        
+908                       out_state[0][1],out_state[1][1],out_state[2][1],out_state[3][1],
+909        
+910                       out_state[0][2],out_state[1][2],out_state[2][2],out_state[3][2],
+911        
+912                       out_state[0][3],out_state[1][3],out_state[2][3],out_state[3][3]};
+913        
+914              end
+                 MISSING_ELSE
+           <font color = "red">      ==></font>
+915        
+916              if(valid_AES)
+                 <font color = "red">-8-</font>  
+917        
+918              begin
+919        
+920                valid_AES <= 0;
+           <font color = "red">        ==></font>
+921        
+922                round     <= 0;
+923        
+924                aux     <= 1;
+925        
+926              end
+                 MISSING_ELSE
+           <font color = "red">      ==></font>
+927        
+928            end
+               MISSING_ELSE
+           <font color = "red">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>-8-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+63           xtime = (valor[7]) ? (valor << 1) ^ 8'h1b : valor << 1;
+                                <font color = "red">-1-</font>  
+                                <font color = "red">==></font>  
+                                <font color = "red">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_16">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_minisoc_aes_dp">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

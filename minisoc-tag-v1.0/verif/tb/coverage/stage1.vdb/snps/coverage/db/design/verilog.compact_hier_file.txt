@@ -1,0 +1,3 @@
+\$unit::../../frontend/rtl/minisoc_aes/minisoc_aes_dp.sv::../../frontend/rtl/minisoc_aes/minisoc_aes_key_exp.sv...@2569559769 02
+top_tb4070
+uvm_custom_install_verdi_recording4070

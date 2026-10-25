@@ -1,4 +1,37 @@
-# MiniSoC AES parte 1
+ MiniSoC AES parte 1
+
+## Comandos curtos
+
+Execute em verif/tb, depois de carregar o setup do servidor:
+
+```bash
+make test
+make regression
+make report
+make cov
+make wave
+make verdi
+```
+
+`test` recompila e roda os dois testes com seed 1. `regression` recompila e
+roda os dois testes com seeds 1/2/3. `report` gera HTML, `cov` abre coverage.
+`wave` recompila e gera FSDB com os tres resets; `verdi` abre esse FSDB.
+`make compile` somente compila. `make run UVM_TESTNAME=minisoc_clock_reset_test SEED=2`
+executa um teste sem recompilar; `make help` lista os comandos.
+Coverage fica habilitado por padrao, usando `coverage/stage1.vdb`; o relatorio
+fica em `coverage/urg_stage1` e as waves em `parte1_clock_reset.fsdb`.
+Esses caminhos sao definidos no Makefile e prevalecem sobre exports antigos
+do terminal. Parametros explicitos na linha de comando ainda podem altera-los.
+Ao usar caminhos personalizados, repita os mesmos parametros nos comandos de analise.
+
+Os nomes de teste/seed, logs e FSDB sao reutilizados. Arquive os resultados
+antes de repetir se quiser preserva-los. A base VDB pode manter outros testes
+e seeds ja coletados; um novo `make test` nao limpa a campanha anterior.
+`make clean` apaga logs, binarios e waves, mas preserva `coverage/`.
+Para uma campanha independente, use uma nova COV_DIR ou mova a base antiga
+antes de recompilar. Os nomes antigos foram removidos; use somente os comandos deste README.
+
+O procedimento detalhado abaixo tambem aceita caminhos personalizados.
 
 Este guia valida somente o bootstrap de clock/reset do MiniSoC AES. O VCS
 executa checagens e coleta cobertura; o Verdi permite analisar assertions,
@@ -33,7 +66,7 @@ Abaixo, parte1_campanha01 e um nome de exemplo; use campanha02 na proxima
 campanha, em todos os comandos correspondentes.
 
 ```bash
-make stage1_cov SEED=1 COV_DIR=coverage/parte1_campanha01.vdb
+make test SEED=1 COV_DIR=coverage/parte1_campanha01.vdb
 ```
 
 Este alvo recompila RTL e TB com instrumentacao, usando simv_cov/csrc_cov,
@@ -66,7 +99,7 @@ nao foram executadas localmente por ausencia de VCS.
 ## 3. Executar a regressao
 
 ```bash
-make regression_cov REG_SEEDS="1 2 3" COV_DIR=coverage/parte1_campanha01.vdb
+make regression REG_SEEDS="1 2 3" COV_DIR=coverage/parte1_campanha01.vdb
 ```
 
 Sao seis runs, com registro de coverage separado por teste/seed, na mesma
@@ -79,8 +112,8 @@ prometer diversidade funcional. Os runs de seed 1 tambem repetem a etapa 2.
 ## 4. Gerar relatorio e abrir coverage no Verdi
 
 ```bash
-make coverage_report COV_DIR=coverage/parte1_campanha01.vdb COV_REPORT=coverage/relatorio_campanha01
-make verdi_cov COV_DIR=coverage/parte1_campanha01.vdb
+make report COV_DIR=coverage/parte1_campanha01.vdb COV_REPORT=coverage/relatorio_campanha01
+make cov COV_DIR=coverage/parte1_campanha01.vdb
 ```
 
 URG gera o relatorio em coverage/relatorio_campanha01. Abra o HTML de entrada
@@ -119,6 +152,11 @@ Localize top_tb.assertions_i. As seis assertions concorrentes sao:
 | a_no_sys_clk_unlocked | Sem lock, sys_clk esta baixo na amostra |
 | a_aes_reset_disabled | Sem enable, reset interno permanece ativo |
 
+As assertions concorrentes e cover properties sao habilitadas apos a primeira
+subida real do clock. Isso evita amostrar a transicao X->0 da inicializacao em
+tempo zero. A habilitacao independe de rst_n: as verificacoes continuam ativas
+durante os pulsos de reset. A checagem imediata continua na primeira subida +1 ps.
+
 Todas sao amostradas na descida do clock de referencia, quando os efeitos da
 subida anterior estao estabilizados. Sao verificacoes do cenario de bootstrap;
 nao demonstram ausencia de glitches entre amostras, PLL habilitado ou AES ativo.
@@ -149,13 +187,12 @@ Percentual global nao substitui os bins funcionais nem a analise de assertions.
 Depois da compilacao com coverage, execute:
 
 ```bash
-make vcs_fsdb_run COVERAGE=1 UVM_TESTNAME=minisoc_clock_reset_test SEED=10 COV_DIR=coverage/parte1_campanha01.vdb FSDB_FILE=parte1_clock_reset.fsdb
-make verdi_wf FSDB_FILE=parte1_clock_reset.fsdb
+make wave WAVE_TEST=minisoc_clock_reset_test SEED=10 COV_DIR=coverage/parte1_campanha01.vdb FSDB_FILE=parte1_clock_reset.fsdb
+make verdi FSDB_FILE=parte1_clock_reset.fsdb
 ```
 
-Seed 10 separa esse registro das seis runs da regressao. Este alvo de execucao
-nao recompila; use o simv_cov produzido pela etapa 2 ou 3, com a mesma base.
-O log e vcs_fsdb_run.log. O servidor ja demonstrou integracao FSDB/Verdi;
+Seed 10 separa esse registro das seis runs da regressao. Este alvo recompila e gera o FSDB, usando a mesma base de coverage.
+O log e wave.log. O servidor ja demonstrou integracao FSDB/Verdi;
 se a instalacao mudar, confira o setup/PLI local.
 
 Adicione clk_if_inst.clk e, em reset_if_inst, rst_n, control_defaults_ok,
@@ -197,7 +234,7 @@ Nenhuma mudanca no RTL ou VIP SPI/MEMORY/refmodel AES e necessaria aqui.
 Para reproduzir um teste especifico instrumentado:
 
 ```bash
-make vcs_run COVERAGE=1 UVM_TESTNAME=minisoc_clock_reset_test SEED=2 COV_DIR=coverage/parte1_campanha01.vdb RUN_LOG=repro_clock_reset_2.log
+make run COVERAGE=1 UVM_TESTNAME=minisoc_clock_reset_test SEED=2 COV_DIR=coverage/parte1_campanha01.vdb RUN_LOG=repro_clock_reset_2.log
 ```
 
 Use a mesma versao dos fontes e do binario. Procure o primeiro erro, sobretudo

@@ -48,8 +48,8 @@ VCS_FLAGS := $(VCS_BASE_FLAGS) $(VCS_BUILD_FLAGS) $(COV_FLAGS) -l vcs_logger.log
 SEED ?= 1
 UVM_TESTNAME ?= minisoc_smoke_test
 
-.PHONY: vcs_comp
-vcs_comp:
+.PHONY: compile
+compile:
 ifeq ($(COVERAGE),1)
 	@mkdir -p $(dir $(COV_DIR))
 endif

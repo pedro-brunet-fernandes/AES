@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: minisoc_spi</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | <a href="asserts.html" ><b>asserts</b></a></div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_minisoc_spi'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_minisoc_spi')">minisoc_spi</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s2 cl rt"> 21.58</td>
+<td class="s5 cl rt"><a href="mod14.html#Line" > 50.00</a></td>
+<td class="s1 cl rt"><a href="mod14.html#Cond" > 12.50</a></td>
+<td class="s0 cl rt"><a href="mod14.html#Toggle" >  0.31</a></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod14.html#Branch" > 23.53</a></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/home/pedro.brunet/proj/minisoc-tag-v1.0/verif/tb/../../frontend/rtl/minisoc_spi/minisoc_spi.sv')">/home/pedro.brunet/proj/minisoc-tag-v1.0/verif/tb/../../frontend/rtl/minisoc_spi/minisoc_spi.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod14.html#inst_tag_14"  onclick="showContent('inst_tag_14')">top_tb.dut.u_spi</a></td>
+<td class="s2 cl rt"> 21.58</td>
+<td class="s5 cl rt"><a href="mod14.html#Line" > 50.00</a></td>
+<td class="s1 cl rt"><a href="mod14.html#Cond" > 12.50</a></td>
+<td class="s0 cl rt"><a href="mod14.html#Toggle" >  0.31</a></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod14.html#Branch" > 23.53</a></td>
+<td class="wht cl rt"></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_minisoc_spi'>
+<hr>
+<a name="inst_tag_14"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_14" >top_tb.dut.u_spi</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s2 cl rt"> 21.58</td>
+<td class="s5 cl rt"><a href="mod14.html#Line" > 50.00</a></td>
+<td class="s1 cl rt"><a href="mod14.html#Cond" > 12.50</a></td>
+<td class="s0 cl rt"><a href="mod14.html#Toggle" >  0.31</a></td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"><a href="mod14.html#Branch" > 23.53</a></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s2 cl rt"> 21.58</td>
+<td class="s5 cl rt"> 50.00</td>
+<td class="s1 cl rt"> 12.50</td>
+<td class="s0 cl rt">  0.31</td>
+<td class="wht cl rt"></td>
+<td class="s2 cl rt"> 23.53</td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s3 cl rt"> 38.89</td>
+<td class="s7 cl rt"> 71.74</td>
+<td class="s2 cl rt"> 29.63</td>
+<td class="s0 cl rt">  0.35</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 53.85</td>
+<td class="wht cl rt"></td>
+<td><a href="mod0.html#inst_tag_0" >dut</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td colspan=8>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_minisoc_spi'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod14.html" >minisoc_spi</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s5"><td class="lf">TOTAL</td><td></td><td>98</td><td>49</td><td>50.00</td></tr>
+<tr class="s5"><td class="lf">ALWAYS</td><td>135</td><td>14</td><td>8</td><td>57.14</td></tr>
+<tr class="s9"><td class="lf">ALWAYS</td><td>173</td><td>12</td><td>11</td><td>91.67</td></tr>
+<tr class="s1"><td class="lf">ALWAYS</td><td>207</td><td>18</td><td>3</td><td>16.67</td></tr>
+<tr class="s3"><td class="lf">ALWAYS</td><td>246</td><td>36</td><td>14</td><td>38.89</td></tr>
+<tr class="s5"><td class="lf">ALWAYS</td><td>320</td><td>7</td><td>4</td><td>57.14</td></tr>
+<tr class="s6"><td class="lf">ALWAYS</td><td>331</td><td>3</td><td>2</td><td>66.67</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>338</td><td>6</td><td>6</td><td>100.00</td></tr>
+<tr class="s5"><td class="lf">INITIAL</td><td>348</td><td>2</td><td>1</td><td>50.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+134                       always @(posedge sclk or posedge cs_n or negedge rstn) begin
+135        1/1              if (!rstn) begin
+136        1/1                rx_shift_sclk     &lt;= '0;
+137        1/1                rx_frame_sclk     &lt;= '0;
+138        1/1                rx_bitcnt_sclk    &lt;= '0;
+139        1/1                frame_toggle_sclk &lt;= 1'b0;
+140                         end
+141        1/1              else if (cs_n) begin
+142        1/1                rx_shift_sclk  &lt;= '0;
+143        1/1                rx_bitcnt_sclk &lt;= '0;
+144                         end
+145                         else begin
+146        <font color = "red">0/1     ==>        rx_shift_sclk &lt;= {rx_shift_sclk[SPI_TRANSF_SIZE-2:0], mosi};</font>
+147                     
+148        <font color = "red">0/1     ==>        if (rx_bitcnt_sclk == SPI_TRANSF_SIZE-1) begin</font>
+149        <font color = "red">0/1     ==>          rx_frame_sclk     &lt;= {rx_shift_sclk[SPI_TRANSF_SIZE-2:0], mosi};</font>
+150        <font color = "red">0/1     ==>          rx_bitcnt_sclk    &lt;= '0;</font>
+151        <font color = "red">0/1     ==>          frame_toggle_sclk &lt;= ~frame_toggle_sclk;</font>
+152                           end
+153                           else begin
+154        <font color = "red">0/1     ==>          rx_bitcnt_sclk &lt;= rx_bitcnt_sclk + 1'b1;</font>
+155                           end
+156                         end
+157                       end
+158                     
+159                       // --------------------------------------------------------------------------
+160                       // SCLK -&gt; always-on SYS_CLK event CDC.
+161                       // --------------------------------------------------------------------------
+162                       (* ASYNC_REG = &quot;TRUE&quot; *) logic frame_toggle_meta;
+163                       (* ASYNC_REG = &quot;TRUE&quot; *) logic frame_toggle_sync;
+164                       logic frame_toggle_sync_d;
+165                       logic frame_event_sys;
+166                     
+167                       logic [SPI_TRANSF_SIZE-1:0] cmd_word_sync;
+168                       logic                       cmd_valid_sys;
+169                     
+170                       assign frame_event_sys = frame_toggle_sync ^ frame_toggle_sync_d;
+171                     
+172                       always_ff @(posedge sys_clk) begin
+173        1/1              if (!rstn) begin
+174        1/1                frame_toggle_meta   &lt;= 1'b0;
+175        1/1                frame_toggle_sync   &lt;= 1'b0;
+176        1/1                frame_toggle_sync_d &lt;= 1'b0;
+177        1/1                cmd_word_sync       &lt;= '0;
+178        1/1                cmd_valid_sys       &lt;= 1'b0;
+179                         end
+180                         else begin
+181        1/1                frame_toggle_meta   &lt;= frame_toggle_sclk;
+182        1/1                frame_toggle_sync   &lt;= frame_toggle_meta;
+183        1/1                frame_toggle_sync_d &lt;= frame_toggle_sync;
+184        1/1                cmd_valid_sys       &lt;= frame_event_sys;
+185                     
+186                           // The complete SCLK-domain frame remains stable until the next frame.
+187        1/1                if (frame_event_sys)
+188        <font color = "red">0/1     ==>          cmd_word_sync &lt;= rx_frame_sclk;</font>
+                        MISSING_ELSE
+189                         end
+190                       end
+191                     
+192                       logic              cmd_rwb;
+193                       logic [ADDR_W-1:0] cmd_addr;
+194                       logic [31:0]       cmd_data;
+195                     
+196                       assign cmd_rwb  = cmd_word_sync[39];
+197                       assign cmd_addr = cmd_word_sync[38:33];
+198                       assign cmd_data = cmd_word_sync[31:0];
+199                     
+200                       // --------------------------------------------------------------------------
+201                       // Register read mux.
+202                       // --------------------------------------------------------------------------
+203                       logic [31:0] read_data_mux;
+204                       logic [31:0] read_data_sys;
+205                     
+206                       always_comb begin
+207        1/1              unique case (cmd_addr)
+208        1/1                REG_KEY0:       read_data_mux = cfg_key[127:96];
+209        <font color = "red">0/1     ==>        REG_KEY1:       read_data_mux = cfg_key[95:64];</font>
+210        <font color = "red">0/1     ==>        REG_KEY2:       read_data_mux = cfg_key[63:32];</font>
+211        <font color = "red">0/1     ==>        REG_KEY3:       read_data_mux = cfg_key[31:0];</font>
+212                     
+213        <font color = "red">0/1     ==>        REG_IV0:        read_data_mux = cfg_iv[127:96];</font>
+214        <font color = "red">0/1     ==>        REG_IV1:        read_data_mux = cfg_iv[95:64];</font>
+215        <font color = "red">0/1     ==>        REG_IV2:        read_data_mux = cfg_iv[63:32];</font>
+216        <font color = "red">0/1     ==>        REG_IV3:        read_data_mux = cfg_iv[31:0];</font>
+217                     
+218        <font color = "red">0/1     ==>        REG_COUNTER_HI: read_data_mux = cfg_counter[63:32];</font>
+219        <font color = "red">0/1     ==>        REG_COUNTER_LO: read_data_mux = cfg_counter[31:0];</font>
+220        <font color = "red">0/1     ==>        REG_NUM_BLOCKS: read_data_mux = {23'b0, cfg_num_blocks};</font>
+221                     
+222                           REG_AES_CONTROL:
+223        <font color = "red">0/1     ==>          read_data_mux = {27'b0, cfg_mode, cfg_decrypt, 1'b0};</font>
+224                     
+225                           REG_AES_STATUS:
+226        <font color = "red">0/1     ==>          read_data_mux = {20'b0, aes_blocks_done, aes_error, aes_done, aes_busy};</font>
+227                     
+228                           REG_VERSION:
+229        <font color = "red">0/1     ==>          read_data_mux = VERSION_VALUE;</font>
+230                     
+231                           REG_SYSTEM_CONTROL:
+232        <font color = "red">0/1     ==>          read_data_mux = {28'b0, cfg_pll_div_sel, cfg_pll_enable, cfg_mem_sel_aes};</font>
+233                     
+234                           REG_SYSTEM_STATUS:
+235        <font color = "red">0/1     ==>          read_data_mux = {31'b0, pll_locked};</font>
+236                     
+237                           default:
+238        1/1                  read_data_mux = 32'b0;
+239                         endcase
+240                       end
+241                     
+242                       // --------------------------------------------------------------------------
+243                       // Register bank.
+244                       // --------------------------------------------------------------------------
+245                       always_ff @(posedge sys_clk) begin
+246        1/1              if (!rstn) begin
+247        1/1                cfg_start       &lt;= 1'b0;
+248        1/1                cfg_decrypt     &lt;= 1'b0;
+249        1/1                cfg_mode        &lt;= 3'b000;
+250        1/1                cfg_num_blocks  &lt;= 9'd1;
+251        1/1                cfg_key         &lt;= '0;
+252        1/1                cfg_iv          &lt;= '0;
+253        1/1                cfg_counter     &lt;= '0;
+254                     
+255        1/1                cfg_mem_sel_aes &lt;= 1'b0;
+256        1/1                cfg_pll_enable  &lt;= 1'b0;
+257                           // Safe default: when software enables the PLL without reprogramming the
+258                           // divider, the system starts at the slowest supported clock: 250 MHz.
+259        1/1                cfg_pll_div_sel &lt;= 2'b11;
+260                     
+261        1/1                read_data_sys   &lt;= 32'b0;
+262                         end
+263                         else begin
+264        1/1                cfg_start &lt;= 1'b0;
+265                     
+266        1/1                if (cmd_valid_sys) begin
+267        <font color = "red">0/1     ==>          if (cmd_rwb) begin</font>
+268        <font color = "red">0/1     ==>            read_data_sys &lt;= read_data_mux;</font>
+269                             end
+270        <font color = "red">0/1     ==>          else if (!aes_busy) begin</font>
+271        <font color = "red">0/1     ==>            unique case (cmd_addr)</font>
+272        <font color = "red">0/1     ==>              REG_KEY0:       cfg_key[127:96]    &lt;= cmd_data;</font>
+273        <font color = "red">0/1     ==>              REG_KEY1:       cfg_key[95:64]     &lt;= cmd_data;</font>
+274        <font color = "red">0/1     ==>              REG_KEY2:       cfg_key[63:32]     &lt;= cmd_data;</font>
+275        <font color = "red">0/1     ==>              REG_KEY3:       cfg_key[31:0]      &lt;= cmd_data;</font>
+276                     
+277        <font color = "red">0/1     ==>              REG_IV0:        cfg_iv[127:96]     &lt;= cmd_data;</font>
+278        <font color = "red">0/1     ==>              REG_IV1:        cfg_iv[95:64]      &lt;= cmd_data;</font>
+279        <font color = "red">0/1     ==>              REG_IV2:        cfg_iv[63:32]      &lt;= cmd_data;</font>
+280        <font color = "red">0/1     ==>              REG_IV3:        cfg_iv[31:0]       &lt;= cmd_data;</font>
+281                     
+282        <font color = "red">0/1     ==>              REG_COUNTER_HI: cfg_counter[63:32] &lt;= cmd_data;</font>
+283        <font color = "red">0/1     ==>              REG_COUNTER_LO: cfg_counter[31:0]  &lt;= cmd_data;</font>
+284                     
+285                                 REG_NUM_BLOCKS:
+286        <font color = "red">0/1     ==>                cfg_num_blocks &lt;= cmd_data[8:0];</font>
+287                     
+288                                 REG_AES_CONTROL: begin
+289        <font color = "red">0/1     ==>                cfg_decrypt &lt;= cmd_data[1];</font>
+290        <font color = "red">0/1     ==>                cfg_mode    &lt;= cmd_data[4:2];</font>
+291                     
+292        <font color = "red">0/1     ==>                if (cmd_data[0])</font>
+293        <font color = "red">0/1     ==>                  cfg_start &lt;= 1'b1;</font>
+                   <font color = "red">==>  MISSING_ELSE</font>
+294                                 end
+295                     
+296                                 REG_SYSTEM_CONTROL: begin
+297        <font color = "red">0/1     ==>                cfg_mem_sel_aes &lt;= cmd_data[0];</font>
+298        <font color = "red">0/1     ==>                cfg_pll_enable  &lt;= cmd_data[1];</font>
+299        <font color = "red">0/1     ==>                cfg_pll_div_sel &lt;= cmd_data[3:2];</font>
+300                                 end
+301                     
+302                                 default: begin
+303                                   // Read-only and undefined locations ignore writes.
+304                                 end
+305                               endcase
+306                             end
+                   <font color = "red">==>  MISSING_ELSE</font>
+307                           end
+                        MISSING_ELSE
+308                         end
+309                       end
+310                     
+311                       // --------------------------------------------------------------------------
+312                       // MISO transmit path.
+313                       // --------------------------------------------------------------------------
+314                       logic [BITCNT_W-1:0]        tx_bitcnt_sclk;
+315                       logic [SPI_TRANSF_SIZE-1:0] tx_response_sclk;
+316                     
+317                       assign tx_response_sclk = {8'h00, read_data_sys};
+318                     
+319                       always @(negedge sclk or posedge cs_n or negedge rstn) begin
+320        1/1              if (!rstn)
+321        1/1                tx_bitcnt_sclk &lt;= '0;
+322        1/1              else if (cs_n)
+323        1/1                tx_bitcnt_sclk &lt;= '0;
+324        <font color = "red">0/1     ==>      else if (tx_bitcnt_sclk == SPI_TRANSF_SIZE-1)</font>
+325        <font color = "red">0/1     ==>        tx_bitcnt_sclk &lt;= '0;</font>
+326                         else
+327        <font color = "red">0/1     ==>        tx_bitcnt_sclk &lt;= tx_bitcnt_sclk + 1'b1;</font>
+328                       end
+329                     
+330                       always_comb begin
+331        1/1              if (cs_n)
+332        1/1                miso = 1'b0;
+333                         else
+334        <font color = "red">0/1     ==>        miso = tx_response_sclk[SPI_TRANSF_SIZE-1-tx_bitcnt_sclk];</font>
+335                       end
+336                     
+337                       always_comb begin
+338        1/1              leds[0]   = aes_busy;
+339        1/1              leds[1]   = aes_done;
+340        1/1              leds[2]   = aes_error;
+341        1/1              leds[3]   = pll_locked;
+342        1/1              leds[4]   = cfg_mem_sel_aes;
+343        1/1              leds[7:5] = aes_blocks_done[2:0];
+344                       end
+345                     
+346                     `ifndef SYNTHESIS
+347                       initial begin
+348        1/1              if (SPI_TRANSF_SIZE != 40)
+349        <font color = "red">0/1     ==>        $fatal(1, &quot;minisoc_spi requires SPI_TRANSF_SIZE=40&quot;);</font>
+                        MISSING_ELSE
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod14.html" >minisoc_spi</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s1"><td class="lf">Conditions</td><td>8</td><td>1</td><td>12.50</td></tr>
+<tr class="s1"><td class="lf">Logical</td><td>8</td><td>1</td><td>12.50</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       148
+ EXPRESSION (rx_bitcnt_sclk == (SPI_TRANSF_SIZE - 1))
+            --------------------1--------------------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       170
+ EXPRESSION (frame_toggle_sync ^ frame_toggle_sync_d)
+             --------1--------   ---------2---------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       324
+ EXPRESSION (tx_bitcnt_sclk == (SPI_TRANSF_SIZE - 1))
+            --------------------1--------------------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod14.html" >minisoc_spi</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s0">
+<td>Totals</td>
+<td class="rt">39</td>
+<td class="rt">2</td>
+<td class="rt">5.13  </td>
+</tr><tr class="s0">
+<td>Total Bits</td>
+<td class="rt">1292</td>
+<td class="rt">4</td>
+<td class="rt">0.31  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">646</td>
+<td class="rt">2</td>
+<td class="rt">0.31  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">646</td>
+<td class="rt">2</td>
+<td class="rt">0.31  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Ports</td>
+<td class="rt">22</td>
+<td class="rt">2</td>
+<td class="rt">9.09  </td>
+</tr><tr class="s0">
+<td>Port Bits</td>
+<td class="rt">730</td>
+<td class="rt">4</td>
+<td class="rt">0.55  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">365</td>
+<td class="rt">2</td>
+<td class="rt">0.55  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">365</td>
+<td class="rt">2</td>
+<td class="rt">0.55  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Signals</td>
+<td class="rt">17</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Signal Bits</td>
+<td class="rt">562</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">281</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">281</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>sclk</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>cs_n</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>mosi</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>miso</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>sys_clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>rstn</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>cfg_start</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>cfg_decrypt</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>cfg_mode[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>cfg_num_blocks[8:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>cfg_key[127:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>cfg_iv[127:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>cfg_counter[63:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>aes_busy</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>aes_done</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>aes_error</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>aes_blocks_done[8:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>cfg_mem_sel_aes</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>cfg_pll_enable</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>cfg_pll_div_sel[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>pll_locked</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>leds[7:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>rx_shift_sclk[39:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rx_frame_sclk[39:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rx_bitcnt_sclk[5:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>frame_toggle_sclk</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>frame_toggle_meta</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>frame_toggle_sync</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>frame_toggle_sync_d</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>frame_event_sys</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>cmd_word_sync[39:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>cmd_valid_sys</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>cmd_rwb</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>cmd_addr[5:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>cmd_data[31:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>read_data_mux[31:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>read_data_sys[31:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>tx_bitcnt_sclk[5:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>tx_response_sclk[39:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr></table><br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod14.html" >minisoc_spi</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s2">
+<td>Branches</td>
+<td></td>
+<td class="rt">51</td>
+<td class="rt">12</td>
+<td class="rt">23.53 </td>
+</tr><tr class="s5">
+<td>IF</td>
+<td class="rt">135</td>
+<td class="rt">4</td>
+<td class="rt">2</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s6">
+<td>IF</td>
+<td class="rt">173</td>
+<td class="rt">3</td>
+<td class="rt">2</td>
+<td class="rt">66.67 </td>
+</tr><tr class="s1">
+<td>CASE</td>
+<td class="rt">207</td>
+<td class="rt">17</td>
+<td class="rt">2</td>
+<td class="rt">11.76 </td>
+</tr><tr class="s1">
+<td>IF</td>
+<td class="rt">246</td>
+<td class="rt">19</td>
+<td class="rt">2</td>
+<td class="rt">10.53 </td>
+</tr><tr class="s5">
+<td>IF</td>
+<td class="rt">320</td>
+<td class="rt">4</td>
+<td class="rt">2</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>IF</td>
+<td class="rt">331</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>IF</td>
+<td class="rt">348</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+135            if (!rstn) begin
+               <font color = "green">-1-</font>  
+136              rx_shift_sclk     <= '0;
+           <font color = "green">      ==></font>
+137              rx_frame_sclk     <= '0;
+138              rx_bitcnt_sclk    <= '0;
+139              frame_toggle_sclk <= 1'b0;
+140            end
+141            else if (cs_n) begin
+                    <font color = "red">-2-</font>  
+142              rx_shift_sclk  <= '0;
+           <font color = "green">      ==></font>
+143              rx_bitcnt_sclk <= '0;
+144            end
+145            else begin
+146              rx_shift_sclk <= {rx_shift_sclk[SPI_TRANSF_SIZE-2:0], mosi};
+147        
+148              if (rx_bitcnt_sclk == SPI_TRANSF_SIZE-1) begin
+                 <font color = "red">-3-</font>  
+149                rx_frame_sclk     <= {rx_shift_sclk[SPI_TRANSF_SIZE-2:0], mosi};
+           <font color = "red">        ==></font>
+150                rx_bitcnt_sclk    <= '0;
+151                frame_toggle_sclk <= ~frame_toggle_sclk;
+152              end
+153              else begin
+154                rx_bitcnt_sclk <= rx_bitcnt_sclk + 1'b1;
+           <font color = "red">        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+173            if (!rstn) begin
+               <font color = "green">-1-</font>  
+174              frame_toggle_meta   <= 1'b0;
+           <font color = "green">      ==></font>
+175              frame_toggle_sync   <= 1'b0;
+176              frame_toggle_sync_d <= 1'b0;
+177              cmd_word_sync       <= '0;
+178              cmd_valid_sys       <= 1'b0;
+179            end
+180            else begin
+181              frame_toggle_meta   <= frame_toggle_sclk;
+182              frame_toggle_sync   <= frame_toggle_meta;
+183              frame_toggle_sync_d <= frame_toggle_sync;
+184              cmd_valid_sys       <= frame_event_sys;
+185        
+186              // The complete SCLK-domain frame remains stable until the next frame.
+187              if (frame_event_sys)
+                 <font color = "red">-2-</font>  
+188                cmd_word_sync <= rx_frame_sclk;
+           <font color = "red">        ==></font>
+                   MISSING_ELSE
+           <font color = "green">        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+207            unique case (cmd_addr)
+                      <font color = "red">-1-</font>  
+208              REG_KEY0:       read_data_mux = cfg_key[127:96];
+           <font color = "green">      ==></font>
+209              REG_KEY1:       read_data_mux = cfg_key[95:64];
+           <font color = "red">      ==></font>
+210              REG_KEY2:       read_data_mux = cfg_key[63:32];
+           <font color = "red">      ==></font>
+211              REG_KEY3:       read_data_mux = cfg_key[31:0];
+           <font color = "red">      ==></font>
+212        
+213              REG_IV0:        read_data_mux = cfg_iv[127:96];
+           <font color = "red">      ==></font>
+214              REG_IV1:        read_data_mux = cfg_iv[95:64];
+           <font color = "red">      ==></font>
+215              REG_IV2:        read_data_mux = cfg_iv[63:32];
+           <font color = "red">      ==></font>
+216              REG_IV3:        read_data_mux = cfg_iv[31:0];
+           <font color = "red">      ==></font>
+217        
+218              REG_COUNTER_HI: read_data_mux = cfg_counter[63:32];
+           <font color = "red">      ==></font>
+219              REG_COUNTER_LO: read_data_mux = cfg_counter[31:0];
+           <font color = "red">      ==></font>
+220              REG_NUM_BLOCKS: read_data_mux = {23'b0, cfg_num_blocks};
+           <font color = "red">      ==></font>
+221        
+222              REG_AES_CONTROL:
+223                read_data_mux = {27'b0, cfg_mode, cfg_decrypt, 1'b0};
+           <font color = "red">        ==></font>
+224        
+225              REG_AES_STATUS:
+226                read_data_mux = {20'b0, aes_blocks_done, aes_error, aes_done, aes_busy};
+           <font color = "red">        ==></font>
+227        
+228              REG_VERSION:
+229                read_data_mux = VERSION_VALUE;
+           <font color = "red">        ==></font>
+230        
+231              REG_SYSTEM_CONTROL:
+232                read_data_mux = {28'b0, cfg_pll_div_sel, cfg_pll_enable, cfg_mem_sel_aes};
+           <font color = "red">        ==></font>
+233        
+234              REG_SYSTEM_STATUS:
+235                read_data_mux = {31'b0, pll_locked};
+           <font color = "red">        ==></font>
+236        
+237              default:
+238                read_data_mux = 32'b0;
+           <font color = "green">        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>REG_KEY0 </td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>REG_KEY1 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>REG_KEY2 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>REG_KEY3 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>REG_IV0 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>REG_IV1 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>REG_IV2 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>REG_IV3 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>REG_COUNTER_HI </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>REG_COUNTER_LO </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>REG_NUM_BLOCKS </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>REG_AES_CONTROL </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>REG_AES_STATUS </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>REG_VERSION </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>REG_SYSTEM_CONTROL </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>REG_SYSTEM_STATUS </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+246            if (!rstn) begin
+               <font color = "green">-1-</font>  
+247              cfg_start       <= 1'b0;
+           <font color = "green">      ==></font>
+248              cfg_decrypt     <= 1'b0;
+249              cfg_mode        <= 3'b000;
+250              cfg_num_blocks  <= 9'd1;
+251              cfg_key         <= '0;
+252              cfg_iv          <= '0;
+253              cfg_counter     <= '0;
+254        
+255              cfg_mem_sel_aes <= 1'b0;
+256              cfg_pll_enable  <= 1'b0;
+257              // Safe default: when software enables the PLL without reprogramming the
+258              // divider, the system starts at the slowest supported clock: 250 MHz.
+259              cfg_pll_div_sel <= 2'b11;
+260        
+261              read_data_sys   <= 32'b0;
+262            end
+263            else begin
+264              cfg_start <= 1'b0;
+265        
+266              if (cmd_valid_sys) begin
+                 <font color = "red">-2-</font>  
+267                if (cmd_rwb) begin
+                   <font color = "red">-3-</font>  
+268                  read_data_sys <= read_data_mux;
+           <font color = "red">          ==></font>
+269                end
+270                else if (!aes_busy) begin
+                        <font color = "red">-4-</font>  
+271                  unique case (cmd_addr)
+                            <font color = "red">-5-</font>  
+272                    REG_KEY0:       cfg_key[127:96]    <= cmd_data;
+           <font color = "red">            ==></font>
+273                    REG_KEY1:       cfg_key[95:64]     <= cmd_data;
+           <font color = "red">            ==></font>
+274                    REG_KEY2:       cfg_key[63:32]     <= cmd_data;
+           <font color = "red">            ==></font>
+275                    REG_KEY3:       cfg_key[31:0]      <= cmd_data;
+           <font color = "red">            ==></font>
+276        
+277                    REG_IV0:        cfg_iv[127:96]     <= cmd_data;
+           <font color = "red">            ==></font>
+278                    REG_IV1:        cfg_iv[95:64]      <= cmd_data;
+           <font color = "red">            ==></font>
+279                    REG_IV2:        cfg_iv[63:32]      <= cmd_data;
+           <font color = "red">            ==></font>
+280                    REG_IV3:        cfg_iv[31:0]       <= cmd_data;
+           <font color = "red">            ==></font>
+281        
+282                    REG_COUNTER_HI: cfg_counter[63:32] <= cmd_data;
+           <font color = "red">            ==></font>
+283                    REG_COUNTER_LO: cfg_counter[31:0]  <= cmd_data;
+           <font color = "red">            ==></font>
+284        
+285                    REG_NUM_BLOCKS:
+286                      cfg_num_blocks <= cmd_data[8:0];
+           <font color = "red">              ==></font>
+287        
+288                    REG_AES_CONTROL: begin
+289                      cfg_decrypt <= cmd_data[1];
+290                      cfg_mode    <= cmd_data[4:2];
+291        
+292                      if (cmd_data[0])
+                         <font color = "red">-6-</font>  
+293                        cfg_start <= 1'b1;
+           <font color = "red">                ==></font>
+                           MISSING_ELSE
+           <font color = "red">                ==></font>
+294                    end
+295        
+296                    REG_SYSTEM_CONTROL: begin
+297                      cfg_mem_sel_aes <= cmd_data[0];
+           <font color = "red">              ==></font>
+298                      cfg_pll_enable  <= cmd_data[1];
+299                      cfg_pll_div_sel <= cmd_data[3:2];
+300                    end
+301        
+302                    default: begin
+           <font color = "red">            ==></font>
+303                      // Read-only and undefined locations ignore writes.
+304                    end
+305                  endcase
+306                end
+                   MISSING_ELSE
+           <font color = "red">        ==></font>
+307              end
+                 MISSING_ELSE
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>REG_KEY0 </td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>REG_KEY1 </td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>REG_KEY2 </td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>REG_KEY3 </td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>REG_IV0 </td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>REG_IV1 </td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>REG_IV2 </td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>REG_IV3 </td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>REG_COUNTER_HI </td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>REG_COUNTER_LO </td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>REG_NUM_BLOCKS </td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>REG_AES_CONTROL </td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>REG_AES_CONTROL </td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>REG_SYSTEM_CONTROL </td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+320            if (!rstn)
+               <font color = "green">-1-</font>  
+321              tx_bitcnt_sclk <= '0;
+           <font color = "green">      ==></font>
+322            else if (cs_n)
+                    <font color = "red">-2-</font>  
+323              tx_bitcnt_sclk <= '0;
+           <font color = "green">      ==></font>
+324            else if (tx_bitcnt_sclk == SPI_TRANSF_SIZE-1)
+                    <font color = "red">-3-</font>  
+325              tx_bitcnt_sclk <= '0;
+           <font color = "red">      ==></font>
+326            else
+327              tx_bitcnt_sclk <= tx_bitcnt_sclk + 1'b1;
+           <font color = "red">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+331            if (cs_n)
+               <font color = "red">-1-</font>  
+332              miso = 1'b0;
+           <font color = "green">      ==></font>
+333            else
+334              miso = tx_response_sclk[SPI_TRANSF_SIZE-1-tx_bitcnt_sclk];
+           <font color = "red">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+348            if (SPI_TRANSF_SIZE != 40)
+               <font color = "red">-1-</font>  
+349              $fatal(1, "minisoc_spi requires SPI_TRANSF_SIZE=40");
+           <font color = "red">      ==></font>
+                 MISSING_ELSE
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_14">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_minisoc_spi">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>
