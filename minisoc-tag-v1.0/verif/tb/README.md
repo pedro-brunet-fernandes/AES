@@ -62,4 +62,3 @@ Os caminhos sao relativos a `verif/tb`:
 - `wave.log`: execucao com `make wave`.
 
 `RUN_LOG` permite escolher outro arquivo para `make run`.
-
