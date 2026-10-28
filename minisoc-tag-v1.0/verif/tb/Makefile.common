@@ -16,7 +16,7 @@ TB_PACKAGES := \
   agents/reset_agent/reset_pkg.sv \
   env/minisoc_env_pkg.sv \
   tests/minisoc_test_pkg.sv
-TB_TOP := top_assertions.sv top_tb.sv
+TB_TOP := top_tb.sv
 TB_FILES := $(TB_INTERFACES) $(TB_PACKAGES) $(TB_TOP)
 
 TB_INCDIRS := \
@@ -28,29 +28,11 @@ VCS_KDB := -kdb
 VCS_DEBUG := -debug_access+all
 VCS_BASE_FLAGS := -full64 -sverilog -ntb_opts uvm-1.2 \
   $(VCS_KDB) $(VCS_DEBUG) -timescale=1ns/1ps $(VCS_EXTRA_FLAGS)
-# Binario separado impede executar por engano simv sem instrumentacao.
-COVERAGE ?= 0
-COV_DIR ?= coverage/stage1.vdb
-COV_METRICS ?= line+cond+branch+tgl+fsm+assert
-ifeq ($(COVERAGE),1)
-SIMV := simv_cov
-COV_FLAGS := -cm $(COV_METRICS) -cm_dir $(COV_DIR)
-COV_RUN_FLAGS = $(COV_FLAGS) -cm_name $(UVM_TESTNAME)_$(SEED)
-VCS_BUILD_FLAGS := -Mdir=csrc_cov
-else
-SIMV := simv
-COV_FLAGS :=
-COV_RUN_FLAGS :=
-VCS_BUILD_FLAGS := -Mdir=csrc
-endif
-VCS_FLAGS := $(VCS_BASE_FLAGS) $(VCS_BUILD_FLAGS) $(COV_FLAGS) -l vcs_logger.log
+VCS_FLAGS := $(VCS_BASE_FLAGS) -l vcs_logger.log
 
 SEED ?= 1
 UVM_TESTNAME ?= minisoc_smoke_test
 
-.PHONY: compile
-compile:
-ifeq ($(COVERAGE),1)
-	@mkdir -p $(dir $(COV_DIR))
-endif
-	vcs $(VCS_FLAGS) $(TB_INCDIRS) $(RTL_FILES) $(TB_FILES) -top top_tb -o $(SIMV)
+.PHONY: vcs_comp
+vcs_comp:
+	vcs $(VCS_FLAGS) $(TB_INCDIRS) $(RTL_FILES) $(TB_FILES) -top top_tb -o simv

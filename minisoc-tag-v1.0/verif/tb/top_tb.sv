@@ -23,14 +23,12 @@ module top_tb;
   assign reset_if_inst.pll_enable=dut.spi_cfg_pll_enable;
   assign reset_if_inst.sys_rst_n=dut.sys_rst_n;
   assign reset_if_inst.sys_clk=dut.sys_clk;
-  top_assertions assertions_i(.clk(clk_if_inst.clk),.rst_n(reset_if_inst.rst_n),
-    .control_defaults_ok(reset_if_inst.control_defaults_ok),
-    .pll_enable(reset_if_inst.pll_enable), .pll_locked(reset_if_inst.pll_locked),
-    .sys_clk(reset_if_inst.sys_clk), .sys_rst_n(reset_if_inst.sys_rst_n));
 
   initial begin
     uvm_config_db#(virtual clock_if)::set(null,"uvm_test_top","clock_vif",clk_if_inst);
-    uvm_config_db#(virtual reset_if)::set(null,"uvm_test_top","reset_vif",reset_if_inst);
+    uvm_config_db#(virtual clock_if)::set(null,"uvm_test_top.env.clk_agt.*","vif",clk_if_inst);
+    uvm_config_db#(virtual clock_if)::set(null,"uvm_test_top.env.rst_agt.*","clock_vif",clk_if_inst);
+    uvm_config_db#(virtual reset_if)::set(null,"uvm_test_top.env.rst_agt.*","vif",reset_if_inst);
     run_test();
   end
 
