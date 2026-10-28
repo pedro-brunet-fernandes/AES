@@ -1,3 +1,10 @@
-# Perfil de teste UVM: top
+# Configuracoes de compilacao
 include Makefile.common
-UVM_TESTNAME := minisoc_smoke_test
+
+# Selecione apenas um teste: deixe a outra linha comentada.
+
+# Smoke: reset inicial de 8 ciclos
+# UVM_TESTNAME := minisoc_smoke_test
+
+# Clock/reset: reset inicial + resets de 2 e 12 ciclos
+UVM_TESTNAME := minisoc_clock_reset_test
