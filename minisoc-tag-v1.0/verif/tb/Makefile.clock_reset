@@ -1,3 +1,0 @@
-# Perfil de teste UVM: clock_reset
-include Makefile.common
-UVM_TESTNAME := minisoc_clock_reset_test
